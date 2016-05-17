@@ -153,9 +153,9 @@
 {
   \begin{minipage}[b]{1.3in}
     \flushleft \footnotesize 
-    1005 Charles Ave. \\  
-    Morgantown, WV \\
-    26505
+    1917 Ruth Street \\  
+    Houston, \textsc{tx} \\
+    77004
   \end{minipage}
   \hfill
   \begin{minipage}[b]{1.5in}
@@ -168,7 +168,7 @@
 }\par
 \hrulefill
 
-\centering\large computer scientist\hskip 3mm$\circ$\hskip 3mm\textsc{gn\&c} specialist\hskip 3mm$\circ$\hskip 3mmevolutionary systems biologist
+\centering\large computer scientist\hskip 3mm$\circ$\hskip 3mm navigation specialist\hskip 3mm$\circ$\hskip 3mmevolutionary systems biologist
 \vskip-6pt
 \hrulefill
 \end{adjustwidth}  
@@ -205,9 +205,10 @@
 \textsc{c},
 \Cpp\ (including modern extensions),
 Ruby,
-Python,
-shell scripting,
-\LaTeX{}
+Python (including \textsc{c} extensions),
+\LaTeX,
+shell scripting%,
+
 
 \medskip
 \emph{Familiar}\ 
@@ -230,13 +231,17 @@ ImageMagick/\Magickpp,
 \textsc{blas},
 \textsc{gnu} Scientific Library,
 Open\textsc{gl},
-\textsc{glsl}
+\textsc{glsl},
+\textsc{glm},
+Eigen,
+\textsc{Trick} simulator,
 
 \smallskip
 $^\dagger${\footnotesize indicates code contributed to library.}
 
 \medskip
 \emph{Software}\ 
+Git,
 Gnuplot,
 Emacs,
 Vim,
@@ -267,19 +272,27 @@ Gilbert \& Lucille Seay Scholarship (Virginia Tech)					\rdate{2005}\newline
 National Merit Scholarship											\rdate{2002}\newline
 
 \newpage
-%\bigskip
+\mhead{Professional \newline Appointments}%
+\textbf{Intuitive Machines,} Houston \newline
+\emph{Senior Development Engineer} \rdate{\textsc{jun}~2015--\textsc{present}}
+\begin{itemize*}
+  \item Responsible for development and maintenance of navigation filter for \textsc{im}'s universal flight software, to be flown on a deorbiter (\textsc{im}'s Terrestrial Return Vehicle, or \textsc{trv}), Moon Express' moon lander, and two drones
+  \item Documented and re-derived the entire 27-state filter, including measurement models for \textsc{gps} and star tracker
+  \item Wrote and validated sensor models in \textsc{nasa} \textsc{trick} physics simulator
+  \item Performed error budget analysis on \textsc{trv}'s navigation system
+  \item Developed a relative navigation model (a batch processor) for an acoustic ranging-based underground navigation system for a drilling project
+\end{itemize*}
+
+\bigskip
 \mhead{Academic \newline Appointments}%
 \textbf{Applied Space Exploration Laboratory,} West Virginia University \newline
-\emph{Post-doctoral Fellow --- Aerospace Engineer} \rdate{\textsc{jan}~2014--\textsc{present}}
+\emph{Post-doctoral Fellow --- Aerospace Engineer} \rdate{\textsc{jan}~2014--\textsc{jun}~2015}
 \begin{itemize*}
-  \item On contract with \textsc{Nasa gsfc}'s Satellite Servicing Capabilities Office
-  \item Working on \textsc{lidar}-based relnav tools for non-cooperative rendezvous
-  \item Developed fast, accurate \textsc{6\,dof} pose initialization strategy
-  \item Developed open source Open\textsc{gl}-based \textsc{3d} sensor simulator
+  \item Developed fast, accurate \textsc{lidar}-based \textsc{6\,dof} pose initialization strategy for non-cooperative rendezvous
   \item Derived/implemented dual inertial state \textsc{mekf} with asynchronous measurement updates, analytically derived bias transition model
-  \item Wrote orbital physics simulator for end-to-end rendezvous simulation and testing
-  \item Studying remote sensing technologies for space natural resource surveying and utilization
-  \item Collaborating with and mentoring grad students and an undergraduate
+  \item Developed open source Open\textsc{gl}-based \textsc{3d} sensor simulator, \textsc{Glidar}
+  \item Studied remote sensing technologies for space natural resource surveying and utilization
+  \item Collaborated with and mentored grad students and an undergraduate
 \end{itemize*}
 
 \medskip
@@ -307,6 +320,14 @@ National Merit Scholarship											\rdate{2002}\newline
 
 \bigskip
 \mhead{Community Contributions}
+
+\textbf{Houston CORE: Mask Factory}\newline
+\emph{Artist} \rdate{2016}
+\begin{itemize*}
+  \item Making 1,100 plaster masks to take to Black Rock City in 2016 for visitors to paint under the man
+\end{itemize*}
+
+\medskip
 \textbf{The Ruby Science Foundation: The SciRuby Project}\newline
 \emph{Director \& Co-Founder} \rdate{2012--\textsc{present}}
 \begin{itemize*}
@@ -321,9 +342,8 @@ National Merit Scholarship											\rdate{2002}\newline
 \emph{At-Large Board Member} \rdate{2012--2013}\newline
 \emph{Secretary} \rdate{2013--2014}
 \begin{itemize*}
-  \item Revised bylaws
+  \item Revised bylaws, counseled board on non-profit law and best practices
   \item Managed teams of volunteers
-  \item Counseled board on non-profit law and best practices
   \item Created policy for providing grants to other organizations for events furthering organizational mission of promoting lindy hop, balboa, shag, and other traditional jazz dances
 \end{itemize*}
 
@@ -348,13 +368,13 @@ National Merit Scholarship											\rdate{2002}\newline
 
 \bigskip
 \mhead{Articles}%
-\par\vspace{-\baselineskip}\textbf{Woods, J.O.}; Rhodes, A.; Sell, J.L.; Christian, J.A. 2015. \textsc{Lidar}-based relative navigation with respect to non-cooperative objects. \textbf{In preparation.}
+\par\vspace{-\baselineskip}\textbf{Woods, J.O.}; Rhodes, A.; Sell, J.L.; Christian, J.A. 2016. \textsc{Lidar}-based relative navigation with respect to non-cooperative objects. \textit{Acta Astronautica}, \textbf{revisions submitted.}
+
+\medskip
+\par\textbf{Woods, J.O.}; Christian, J.A. 2016. \textsc{Glidar}: An OpenGL-based, real-time, and open source 3\textsc{d} sensor simulator for testing computer vision algorithms. \textit{Journal of Imaging}, \textbf{revisions submitted.}
 
 \medskip
 \par\textbf{Woods, J.O.}; Tien, M.Z.; Marcotte, E.M. April 2015. Interrogating conserved elements of diseases using Boolean combinations of orthologous phenotypes. \textit{BioR$\chi$iv}.
-
-\medskip
-\par\textbf{Woods, J.O.}; Christian, J.A. March 2015. \textsc{Glidar}: An Open\textsc{gl}-based, real-time, and open source \textsc{3d} sensor simulator for testing machine vision algorithms. \textit{International Journal of Computer Vision}, \textbf{submitted.} 
 
 \medskip
 \par\textbf{Woods, J.O.}; Singh-Blom, U.M.; Laurent, J.M.; McGary, K.L.; Marcotte, E.M. January 2013. Prediction of gene--phenotype associations in humans, mice, and plants using phenologs. \textit{BMC Bioinformatics 14}: p. 203.
@@ -373,7 +393,7 @@ National Merit Scholarship											\rdate{2002}\newline
 \par\vspace{-\baselineskip}\textbf{Woods, J.O.}; Christian, J.A.; Evans, T. February 2015. A \textsc{6-dof} pose initialization strategy for \textsc{lidar}-based non-cooperative navigation. In \textit{38th Annual Guidance \& Control Conference}, Breckenridge, CO.
 
 \medskip
-Sell, J.L.; Rhodes, A.; \textbf{Woods, J.O.}; Christian, J.A.; Evans, T. 2014. In \textit{AIAA/AAS Astrodynamics Specialist Conference}.
+Sell, J.L.; Rhodes, A.; \textbf{Woods, J.O.}; Christian, J.A.; Evans, T. 2014. In \textit{AIAA/AAS Astrodynamics Specialist Conference}, San Diego, CA.
 
 \bigskip
 \mhead{Posters}%
@@ -382,7 +402,7 @@ Sell, J.L.; Rhodes, A.; \textbf{Woods, J.O.}; Christian, J.A.; Evans, T. 2014. I
 \medskip
 \par \textbf{Woods, J.O.}; Singh-Blom, U.M.; McGary, K.L.; Marcotte, E.M. 13--16 November 2010. In \textit{From Functional Genomics to Systems Biology},  EMBL Heidelberg, Heidelberg, Germany.
 
-\bigskip
+\newpage
 \mhead{Technical reports}%
 \par\vspace{-\baselineskip}\textbf{Woods, J.O.}; Christian, J.A. 17 October 2014. A real-time, software-based \textsc{3d} sensor simulator. ASEL Technical Memorandum: \textit{ASEL--14--005}.
 
@@ -395,7 +415,7 @@ Sell, J.L.; Rhodes, A.; \textbf{Woods, J.O.}; Christian, J.A.; Evans, T. 2014. I
 
 \bigskip
 \mhead{Invited Talks}%
-\par\vspace{-\baselineskip}SXSWedu session: Keeping Schools Secure. 11 March 2015.
+\par\vspace{-\baselineskip}\textsc{Sxsw}edu session: Keeping Schools Secure. 11 March 2015.
 
 \medskip
 \par Texas Conference on School-Based Law Enforcement: Panel Discussion. 2010.
@@ -406,13 +426,15 @@ Sell, J.L.; Rhodes, A.; \textbf{Woods, J.O.}; Christian, J.A.; Evans, T. 2014. I
 
 \bigskip
 \mhead{Activities \& \newline Interests}%
-Lindy Hop,
-Balboa,
+dance (lindy hop, balboa, flamenco),
+circus arts,
+\textsc{mig} welding,
+carpentry,
+the Ten Principles,
 chicken husbandry,
 beekeeping,
 space exploration,
 violence prevention,
-carpentry,
 foreign languages,
 weightlifting
 
