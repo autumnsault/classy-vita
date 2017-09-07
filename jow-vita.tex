@@ -28,7 +28,9 @@
 
 \usepackage{graphicx}
 \usepackage{wrapfig}
+\usepackage{pgfplots}
 \usepackage{amsmath}
+\usepackage{textcomp}
 \usepackage{url}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
@@ -52,6 +54,16 @@
   pdfkeywords={\mykeywords}
 ]{hyperref}
 \usepackage{relsize}
+
+% Use sans serif fonts in plot
+\usepackage[eulergreek]{sansmath}
+\pgfplotsset{
+  every axis/.append style = {font=\sansmath\sffamily},
+  %every axis label = {font=\sansmath\sffamily},
+  %legend style = {font=\sansmath\sffamily},
+  %tick label style = {font=\sansmath\sffamily},
+  %every node style = {font=\sansmath\sffamily}
+  }
 
 % fix ocgcolor link breaking; thanks due to Benjamin Lerner (http://goo.gl/VZKR7M)
 \makeatletter
@@ -153,9 +165,9 @@
 {
   \begin{minipage}[b]{1.3in}
     \flushleft \footnotesize 
-    1917 Ruth Street \\  
+    1122 Autrey St.~\textnumero\,2 \\  
     Houston, \textsc{tx} \\
-    77004
+    77006
   \end{minipage}
   \hfill
   \begin{minipage}[b]{1.5in}
@@ -168,7 +180,7 @@
 }\par
 \hrulefill
 
-\centering\large computer scientist\hskip 3mm$\circ$\hskip 3mm navigation specialist\hskip 3mm$\circ$\hskip 3mmevolutionary systems biologist
+\centering\small computer scientist\hskip 3mm$\circ$\hskip 3mm guidance, navigation, \& control specialist\hskip 3mm$\circ$\hskip 3mm evolutionary systems biologist
 \vskip-6pt
 \hrulefill
 \end{adjustwidth}  
@@ -193,10 +205,38 @@
 \end{itemize*}
 %
 \begin{wrapfigure}{R}{2in}
-\vspace{-45pt}%
+\vspace{-25pt}%
 \centering%
-\includegraphics[width=2in]{programming-graph.pdf}%
-\vspace{-40pt}%
+%\includegraphics[width=2in]{programming-graph.pdf}%
+\begin{tikzpicture}
+\begin{axis}[ybar
+			, symbolic x coords={C++, C, Ruby, Python},
+			, ylabel={years}
+			, ylabel near ticks
+			, ymajorgrids=true
+			, axis on top
+			, grid style={draw=white, line width=1pt}
+			, major tick length=0pt
+			, ymin=0
+			, xtick=data
+			, fill=black
+			, fill opacity=1.0
+			, draw=white
+			, bar width=0.05\textwidth
+			, nodes near coords
+			, every node near coord/.append style={rotate=90, anchor=west, color=black}
+			, width=2in
+			, xmajorticks=false
+			]
+\addplot+[point meta=explicit symbolic,fill=black,draw=white] coordinates {
+	(C++,15) [C\footnotesize{++}]
+	(C,9) [C]
+	(Ruby,8) [Ruby]
+	(Python,6) [Python]
+};
+\end{axis}
+\end{tikzpicture}
+\vspace{-15pt}%
 \end{wrapfigure}%
 %
 \bigskip
@@ -212,7 +252,7 @@ shell scripting%,
 
 \medskip
 \emph{Familiar}\ 
-\textsc{Matlab},
+\textsc{Matlab} and \textsc{gnu} Octave,
 \textsc{Fortran}~95,
 Perl,
 \textsc{R},
@@ -222,8 +262,7 @@ Perl,
 \emph{Libraries}\ 
 Point Cloud Library$^\dagger$,
 \textsc{flann}$^\dagger$ ($k$ nearest neighbors),
-\Cpp\ Standard Template Library,
-Boost,
+\Cpp\ \textsc{stl} and Boost,
 \textsc{assimp},
 ImageMagick/\Magickpp,
 \textsc{atlas},
@@ -234,10 +273,14 @@ Open\textsc{gl},
 \textsc{glsl},
 \textsc{glm},
 Eigen,
-\textsc{Trick} simulator
+\textsc{Trick} simulator,
+\textsc{Nm}atrix$^\ddagger$,
+Pyquat$^\ddagger$,
+\textsc{Glidar}$^\ddagger$
 
 \smallskip
-$^\dagger${\footnotesize indicates code contributed to library.}
+$^\dagger$\,{\footnotesize indicates code contributed to library}\newline
+$^\ddagger$\,{\footnotesize indicates primary authorship}
 
 \medskip
 \emph{Software}\ 
@@ -251,15 +294,14 @@ Zsh,
 \textsc{gdb},
 Valgrind,
 \textsc{cm}ake,
-Postgre\textsc{sql},
-My\textsc{sql},
 Ubuntu, Mac \textsc{os\,x}
 
 
 
 \bigskip
 \mhead{Honors \& \newline Awards}%
-White House Champion of Change										\rdate{2014}\newline
+Necklace Factory / Burning Man Art Award                            \rdate{2016}\newline
+White House Champion of Change (Obama Administration)				\rdate{2014}\newline
 National Science Foundation Graduate Research Fellowship			\rdate{2009--2012}\newline
 ``Best of Austin'' Award: Best Activist	(\emph{The Austin Chronicle})							\rdate{2011}\newline
 Scholar, Netroots Nation											\rdate{2011}\newline
@@ -271,16 +313,13 @@ Inductee, $\Upsilon\Pi\mathrm{E}$ (Virginia Tech)					\rdate{2006}\newline
 Gilbert \& Lucille Seay Scholarship (Virginia Tech)					\rdate{2005}\newline
 National Merit Scholarship											\rdate{2002}\newline
 
-\newpage
 \mhead{Professional \newline Appointments}%
 \textbf{Intuitive Machines,} Houston \newline
-\emph{Senior Development Engineer} \rdate{\textsc{jun}~2015--\textsc{present}}
+\emph{Senior Development Engineer} \rdate{2015--\textsc{present}}
 \begin{itemize*}
-  \item Responsible for development and maintenance of navigation filter for \textsc{im}'s universal flight software, to be flown on a deorbiter (Terrestrial Return Vehicle, or \textsc{trv}), Moon Express' moon lander, and two drones
-  \item Documented and re-derived the entire 27-state filter, including measurement models for \textsc{gps} and star tracker
-  \item Wrote and validated sensor models in \textsc{nasa} \textsc{trick} physics simulator
-  \item Performed error budget analysis on \textsc{trv}'s navigation system
-  \item Developed a relative navigation model for an acoustic ranging-based underground navigation system for a drilling project
+  \item Responsible for development and maintenance of 27-state navigation filter for \textsc{im}'s universal flight software, to be flown on a deorbiter (Terrestrial Return Vehicle, or \textsc{trv}), Moon Express' moon lander, and two drones; documented and re-derived the entire filter, including measurement models for \textsc{gps} and star tracker; wrote and validated sensor models in \textsc{nasa} \textsc{trick} physics simulator; performed error budget analysis on \textsc{trv}'s navigation system
+  \item Wrote engineering requirements for payloads and maintained \textsc{gn\&c} requirements for rendezvous and docking of Axiom commercial space station modules with \textsc{iss}; implemented attitude control and targeting algorithms and performed solar power study
+  \item Designed and implemented a dual-state navigation filter for a drill bit with limited observability
 \end{itemize*}
 
 \bigskip
@@ -321,10 +360,13 @@ National Merit Scholarship											\rdate{2002}\newline
 \bigskip
 \mhead{Community Contributions}
 
-\textbf{Houston CORE: Mask Factory}\newline
-\emph{Artist} \rdate{2016}
+\vskip -1em
+\textbf{Starship Factory}\newline
+\emph{Artist, Organizer} \rdate{2016--2017}%\newline
+%\emph{Organizer} \rdate{2017}
 \begin{itemize*}
-  \item Fabricating 1,100 plaster masks to take to Black Rock City in 2016 for visitors to paint under the man
+  \item Organized artist collective which attempts to envision and bring about a future worth looking forward to
+  \item Created large-scale art installations for Burning Flipside (2017) and Burning Man (2016 and 2017)
 \end{itemize*}
 
 \medskip
@@ -334,23 +376,23 @@ National Merit Scholarship											\rdate{2002}\newline
   \item Wrote \textsc{Nm}atrix, dense and sparse linear algebra software for Ruby, in \textsc{c}/\Cpp
   \item Organized the SciRuby Project, dedicated to enhancing the Ruby language's numerical and scientific computing facilities
   \item Applied for grants, mentored graduate and undergraduate students
-  \item Wrote three successful Google Summer of Code applications and directed mentors
+  \item Wrote four successful Google Summer of Code applications and directed mentors
 \end{itemize*}
 
 \medskip
 \textbf{Austin Swing Syndicate}\newline
-\emph{At-Large Board Member} \rdate{2012--2013}\newline
-\emph{Secretary} \rdate{2013--2014}
+\emph{At-Large Board Member, Secretary} \rdate{2012--2014}%\newline
+%\emph{Secretary} \rdate{2013--2014}
 \begin{itemize*}
   \item Revised bylaws, counseled board on non-profit law and best practices
   \item Managed teams of volunteers
-  \item Created policy for providing grants to other organizations for events furthering organizational mission of promoting lindy hop, balboa, shag, and other traditional jazz dances
+%  \item Created policy for providing grants to other organizations for events furthering organizational mission of promoting lindy hop, balboa, shag, and other traditional jazz dances
 \end{itemize*}
 
 \medskip
 \textbf{Texas Gun Sense}\newline
-\emph{Founding Board Member} \rdate{2013--2014}\newline
-\emph{Advisory Board Member} \rdate{2014--\textsc{present}}
+\emph{Founding Board Member, Advisory Board Member} \rdate{2013--\textsc{present}}%\newline
+%\emph{Advisory Board Member} \rdate{2014--\textsc{present}}
 \begin{itemize*}
   \item Co-founded an organization promoting a fact-based dialogue around the belief that gun ownership is an individual right, best preserved by ensuring that firearms stay out of the hands of criminals
   \item Organized and motivated volunteers to testify and lobby at the state level
@@ -368,7 +410,7 @@ National Merit Scholarship											\rdate{2002}\newline
 
 \bigskip
 \mhead{Articles}%
-\par\vspace{-\baselineskip}\textbf{Woods, J.O.}; Christian, J.A. 2016. \textsc{Lidar}-based relative navigation with respect to non-cooperative objects. \textit{Acta Astronautica}.
+\par\vspace{-\baselineskip}\textbf{Woods, J.O.}; Christian, J.A. 2016. \textsc{Lidar}-based relative navigation with respect to non-cooperative objects. \textit{Acta Astronautica 126}: pp.\ 298--311.
 
 \medskip
 \par\textbf{Woods, J.O.}; Christian, J.A. 2016. \textsc{Glidar}: An OpenGL-based, real-time, and open source 3\textsc{d} sensor simulator for testing computer vision algorithms. \textit{Journal of Imaging 2}(1).
@@ -377,16 +419,16 @@ National Merit Scholarship											\rdate{2002}\newline
 \par\textbf{Woods, J.O.}; Tien, M.Z.; Marcotte, E.M. April 2015. Interrogating conserved elements of diseases using Boolean combinations of orthologous phenotypes. \textit{BioR$\chi$iv}.
 
 \medskip
-\par\textbf{Woods, J.O.}; Singh-Blom, U.M.; Laurent, J.M.; McGary, K.L.; Marcotte, E.M. January 2013. Prediction of gene--phenotype associations in humans, mice, and plants using phenologs. \textit{BMC Bioinformatics 14}: p. 203.
+\par\textbf{Woods, J.O.}; Singh-Blom, U.M.; Laurent, J.M.; McGary, K.L.; Marcotte, E.M. January 2013. Prediction of gene--phenotype associations in humans, mice, and plants using phenologs. \textit{BMC Bioinformatics 14}: p.\ 203.
 
 \medskip
 \par Singh-Blom, U.M.; Natarajan, N.; Tewari, A.; \textbf{Woods, J.O.}; Dhillon, I.S.; Marcotte, E.M. January 2013. Prediction and validation of gene--disease associations using methods inspired by social network analyses. \textit{PLoS One 8}(5): e58977.
 
 \medskip
-\par McGary, K.L.; Park, T.J.; \textbf{Woods, J.O.}; Cha, H.J.; Wallingford, J.B.; Marcotte, E.M. April 2010. Systematic discovery of nonobvious human disease models through orthologous phenotypes. \textit{Proceedings of the National Academy of Sciences of the United States of America 107}(14): pp. 6544--9.
+\par McGary, K.L.; Park, T.J.; \textbf{Woods, J.O.}; Cha, H.J.; Wallingford, J.B.; Marcotte, E.M. April 2010. Systematic discovery of nonobvious human disease models through orthologous phenotypes. \textit{Proceedings of the National Academy of Sciences of the United States of America 107}(14): pp.\ 6544--9.
 
 \medskip
-\par Brennan, T.P.; \textbf{Woods, J.O.}; Sedaghat, A.R.; Siliciano, J.D.; Siliciano, R.F.; Wilke, C.O. September 2009. Analysis of human immunodeficiency virus type 1 viremia and provirus in resting $\textsc{cd4}^{+}$ \textsc{t} cells reveals a novel source of residual viremia in patients on antiretroviral therapy. \textit{Journal of Virology 83}(17): pp. 8470--81.
+\par Brennan, T.P.; \textbf{Woods, J.O.}; Sedaghat, A.R.; Siliciano, J.D.; Siliciano, R.F.; Wilke, C.O. September 2009. Analysis of human immunodeficiency virus type 1 viremia and provirus in resting $\textsc{cd4}^{+}$ \textsc{t} cells reveals a novel source of residual viremia in patients on antiretroviral therapy. \textit{Journal of Virology 83}(17): pp.\ 8470--81.
 
 \bigskip
 \mhead{Conference \newline Proceedings}%
@@ -402,8 +444,7 @@ Sell, J.L.; Rhodes, A.; \textbf{Woods, J.O.}; Christian, J.A.; Evans, T. 2014. I
 \medskip
 \par \textbf{Woods, J.O.}; Singh-Blom, U.M.; McGary, K.L.; Marcotte, E.M. 13--16 November 2010. In \textit{From Functional Genomics to Systems Biology},  EMBL Heidelberg, Heidelberg, Germany.
 
-\newpage
-\mhead{Technical reports}%
+\mhead{Technical \newline Reports}%
 \par\vspace{-\baselineskip}\textbf{Woods, J.O.}; Christian, J.A. 17 October 2014. A real-time, software-based \textsc{3d} sensor simulator. ASEL Technical Memorandum: \textit{ASEL--14--005}.
 
 \medskip
@@ -421,23 +462,19 @@ Sell, J.L.; Rhodes, A.; \textbf{Woods, J.O.}; Christian, J.A.; Evans, T. 2014. I
 \par Texas Conference on School-Based Law Enforcement: Panel Discussion. 2010.
 
 \bigskip
-\mhead{Media \newline appearances}%
+\mhead{Media}%
 \par\vspace{-\baselineskip}\textit{Media appearances available upon request.}
 
 \bigskip
 \mhead{Activities \& \newline Interests}%
-dance (lindy hop, balboa, flamenco),
+dance (lindy hop and ballet),
 circus arts,
 weightlifting,
-\textsc{mig} welding and metalworking,
-carpentry,
-chicken husbandry,
-beekeeping,
 space exploration,
-foreign languages
+large-scale interactive art
 
 \bigskip
-\mhead{Foreign\newline languages}%
+\mhead{Foreign\newline Languages}%
 English (native tongue)\newline
 Spanish (conversational)\newline
 Russian (needs refreshing)\newline
@@ -454,11 +491,11 @@ Professor of Chemistry \& Biochemistry, The University of Texas at Austin
 
 \medskip
 Andy~Ellington\rdate{\href{mailto:ellingtonlab@gmail.com}{ellingtonlab@gmail.com}
-\hskip 0.5cm\href{512-471-6445}{512-471-6445}}\newline
+\hskip 0.5cm\href{tel:512-471-6445}{512-471-6445}}\newline
 Professor of Chemistry \& Biochemistry, The University of Texas at Austin
 
 \medskip
-Claus~Wilke\rdate{\href{mailto:wilke@austin.utexas.edu}{wilke@austin.utexas.edu}\hskip 0.5cm\href{512-232-2459}{512-232-2459}}\newline
+Claus~Wilke\rdate{\href{mailto:wilke@austin.utexas.edu}{wilke@austin.utexas.edu}\hskip 0.5cm\href{tel:512-232-2459}{512-232-2459}}\newline
 Chair, Department of Integrative Biology, The University of Texas at Austin
 
 
