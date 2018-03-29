@@ -164,10 +164,9 @@
 %
 {
   \begin{minipage}[b]{1.3in}
-    \flushleft \footnotesize 
-    1122 Autrey St.~\textnumero\,2 \\  
+    \flushleft \footnotesize   
     Houston, \textsc{tx} \\
-    77006
+    Oakland, \textsc{ca}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{1.5in}
@@ -180,7 +179,7 @@
 }\par
 \hrulefill
 
-\centering\small computer scientist\hskip 3mm$\circ$\hskip 3mm guidance, navigation, \& control specialist\hskip 3mm$\circ$\hskip 3mm evolutionary systems biologist
+\centering\small guidance, navigation, \& control specialist\hskip 3mm$\circ$\hskip 3mm computer scientist\hskip 3mm$\circ$\hskip 3mm evolutionary systems biologist
 \vskip-6pt
 \hrulefill
 \end{adjustwidth}  
@@ -229,10 +228,10 @@
 			, xmajorticks=false
 			]
 \addplot+[point meta=explicit symbolic,fill=black,draw=white] coordinates {
-	(C++,15) [C\footnotesize{++}]
-	(C,9) [C]
-	(Ruby,8) [Ruby]
-	(Python,6) [Python]
+	(C++,16) [C\footnotesize{++}]
+	(C,10) [C]
+	(Ruby,9) [Ruby]
+	(Python,7) [Python]
 };
 \end{axis}
 \end{tikzpicture}
@@ -317,9 +316,10 @@ National Merit Scholarship											\rdate{2002}\newline
 \textbf{Intuitive Machines,} Houston \newline
 \emph{Senior Development Engineer} \rdate{2015--\textsc{present}}
 \begin{itemize*}
-  \item Responsible for development and maintenance of 27-state navigation filter for \textsc{im}'s universal flight software, to be flown on a deorbiter (Terrestrial Return Vehicle, or \textsc{trv}), Moon Express' moon lander, and two drones; documented and re-derived the entire filter, including measurement models for \textsc{gps} and star tracker; wrote and validated sensor models in \textsc{nasa} \textsc{trick} physics simulator; performed error budget analysis on \textsc{trv}'s navigation system
+  \item Responsible for universal navigation filter in \textsc{im}'s universal flight software, to be flown on a deorbiter (Terrestrial Return Vehicle, or \textsc{trv}) and Moon Express' moon lander; documented and re-derived the entire filter; wrote and validated sensor models in \textsc{nasa} \textsc{trick} physics simulator
   \item Wrote engineering requirements for payloads and maintained \textsc{gn\&c} requirements for rendezvous and docking of Axiom commercial space station modules with \textsc{iss}; implemented attitude control and targeting algorithms and performed solar power study
-  \item Designed and implemented a dual-state navigation filter for a drill bit with limited observability
+  \item Designed and implemented multiple dual-state extended Kalman filters and complementary filters for aircraft, spacecraft, and drilling systems
+  \item Performed error budget analysis and designed and prototyped \textsc{ekf} for gravimetry and \textsc{gps}-denied planetary navigation
 \end{itemize*}
 
 \bigskip
@@ -328,10 +328,10 @@ National Merit Scholarship											\rdate{2002}\newline
 \emph{Post-doctoral Fellow --- Aerospace Engineer} \rdate{\textsc{jan}~2014--\textsc{jun}~2015}
 \begin{itemize*}
   \item Developed fast, accurate \textsc{lidar}-based \textsc{6\,dof} pose initialization strategy for non-cooperative rendezvous
-  \item Derived/implemented dual inertial state \textsc{mekf} with asynchronous measurement updates, analytically derived bias transition model
+  \item Derived/implemented dual inertial state \textsc{ekf} with asynchronous measurement updates, analytically derived bias transition model
   \item Developed open source Open\textsc{gl}-based \textsc{3d} sensor simulator, \textsc{Glidar}
   \item Studied remote sensing technologies for space natural resource surveying and utilization
-  \item Collaborated with and mentored grad students and an undergraduate
+  \item Mentored and collaborated with grad students and an undergraduate
 \end{itemize*}
 
 \medskip
@@ -340,12 +340,11 @@ National Merit Scholarship											\rdate{2002}\newline
 \begin{itemize*}
   \item Designed and implemented algorithms and data structures in Python, Perl, Ruby, and \textsc{c}/\Cpp
   \item Formulated hypotheses relating to an aspect of evolutionary theory called deep homology
-  \item Wrote software for validating hypotheses, by quickly predicting gene--disease and gene--phenotype associations
-  \item Wrote software for automating processing of large sets of proteome data
+  \item Wrote software for automating processing of large data sets and validating hypotheses, by quickly predicting gene--disease and gene--phenotype associations
   \item Researched, designed, and wrote statistical software for searching for genes under various types of selection (positive, purifying, relaxed)
   \item Invalidated a hypothesis about \textsc{hiv} reservoirs using viral evolution simulation
   \item Designed scheme for re-engineering cellular metabolism in \textit{E.~coli}, and partially implemented it (wet lab)
-  \item Worked briefly with mass spectrometers (Orbitrap and \textsc{ltq}; wet lab)
+%  \item Worked briefly with mass spectrometers (Orbitrap and \textsc{ltq}; wet lab)
 \end{itemize*}
 
 \medskip
@@ -362,7 +361,7 @@ National Merit Scholarship											\rdate{2002}\newline
 
 \vskip -1em
 \textbf{Starship Factory}\newline
-\emph{Artist, Organizer} \rdate{2016--2017}%\newline
+\emph{Artist, Organizer, Ranger} \rdate{2016--2017}%\newline
 %\emph{Organizer} \rdate{2017}
 \begin{itemize*}
   \item Organized artist collective which attempts to envision and bring about a future worth looking forward to
