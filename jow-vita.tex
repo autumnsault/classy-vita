@@ -179,7 +179,7 @@
 }\par
 \hrulefill
 
-\centering\small guidance, navigation, \& control specialist\hskip 3mm$\circ$\hskip 3mm computer scientist\hskip 3mm$\circ$\hskip 3mm evolutionary systems biologist
+\centering\small guidance, navigation, \& control\hskip 3mm$\circ$\hskip 3mm computer science\hskip 3mm$\circ$\hskip 3mm evolutionary systems biology
 \vskip-6pt
 \hrulefill
 \end{adjustwidth}  
@@ -246,12 +246,12 @@
 Ruby,
 Python (including \textsc{c} extensions),
 \LaTeX,
+\textsc{gnu} Octave (and \textsc{Matlab}),
 shell scripting%,
 
 
 \medskip
 \emph{Familiar}\ 
-\textsc{Matlab} and \textsc{gnu} Octave,
 \textsc{Fortran}~95,
 Perl,
 \textsc{R},
@@ -299,6 +299,7 @@ Ubuntu, Mac \textsc{os\,x}
 
 \bigskip
 \mhead{Honors \& \newline Awards}%
+Paul Harris Fellowship                                              \rdate{2018}\newline
 Necklace Factory / Burning Man Art Award                            \rdate{2016}\newline
 White House Champion of Change (Obama Administration)				\rdate{2014}\newline
 National Science Foundation Graduate Research Fellowship			\rdate{2009--2012}\newline
@@ -316,11 +317,17 @@ National Merit Scholarship											\rdate{2002}\newline
 \textbf{Intuitive Machines,} Houston \newline
 \emph{Senior Development Engineer} \rdate{2015--\textsc{present}}
 \begin{itemize*}
-  \item Responsible for universal navigation filter in \textsc{im}'s universal flight software, to be flown on a deorbiter (Terrestrial Return Vehicle, or \textsc{trv}) and Moon Express' moon lander; documented and re-derived filter; wrote and validated sensor models in \textsc{nasa} \textsc{trick} physics simulator
-  \item Wrote engineering requirements for payloads and maintained \textsc{gn\&c} requirements for rendezvous and docking of Axiom commercial space station modules with \textsc{iss}; implemented attitude control and targeting algorithms and performed solar power study
-  \item Studied cislunar navigation architectures with focus on range dilution of precision
-  \item Designed and implemented multiple dual-state extended Kalman filters and complementary filters for aircraft, spacecraft, and drilling systems
-  \item Performed error budget analysis and designed and prototyped \textsc{ekf} for gravimetry and \textsc{gps}-denied planetary navigation
+  \item Mission and trajectory design --- \textsc{nova-c} lunar lander
+  \item Navigation filters and simulation sensor models --- \textsc{Im}'s Terrestrial Return Vehicle / Universal Return Vehicle, Moon Express \textsc{mx}-1
+  \item Payload requirements, \textsc{gn\&c} design --- Axiom commercial space station module
+  \item Dilution of precision study for cislunar navigation
+  \item Error budget analysis and filter prototype --- aircraft-based gravimetry
+  \item Measurement models and filter prototype --- \textsc{Gps}-denied planetary navigation
+%  \item Responsible for universal navigation filter in \textsc{im}'s universal flight software, to be flown on a deorbiter (Terrestrial Return Vehicle, or \textsc{trv}) and Moon Express' moon lander; documented and re-derived filter; wrote and validated sensor models in \textsc{nasa} \textsc{trick} physics simulator
+%  \item Wrote engineering requirements for payloads and maintained \textsc{gn\&c} requirements for rendezvous and docking of Axiom commercial space station modules with \textsc{iss}; implemented attitude control and targeting algorithms and performed solar power study; created mission design
+%  \item Studied cislunar navigation architectures with focus on range dilution of precision
+%  \item Designed and implemented multiple dual-state extended Kalman filters and complementary filters for aircraft, spacecraft, and drilling systems
+%  \item Performed error budget analysis and designed and prototyped \textsc{ekf} for gravimetry and \textsc{gps}-denied planetary navigation
 \end{itemize*}
 
 \bigskip
@@ -361,8 +368,12 @@ National Merit Scholarship											\rdate{2002}\newline
 \mhead{Community Contributions}
 
 \vskip -1em
+\textbf{Black Rock Rangers}\newline
+\emph{Ranger} \rdate{2018--\textsc{present}}
+
+\medskip
 \textbf{Starship Factory}\newline
-\emph{Artist, Organizer, Ranger} \rdate{2016--2017}%\newline
+\emph{Artist, Organizer} \rdate{2016--2017}%\newline
 %\emph{Organizer} \rdate{2017}
 %\begin{itemize*}
 %  \item Organized artist collective which attempts to envision and bring about a future worth looking forward to
@@ -446,13 +457,22 @@ Sell, J.L.; Rhodes, A.; \textbf{Woods, J.O.}; Christian, J.A.; Evans, T. 2014. I
 \bigskip
 
 \mhead{Technical \newline Reports}%
-\par\vspace{-\baselineskip}\textbf{Woods, J.O.} 2018. Position and velocity variance growth during dead reckoning of a drill. \textit{IM--TM--2018--02}.
+\par\vspace{-\baselineskip}\textit{Some internal technical report titles have been changed for external clarity or to maintain client confidentiality.}
 
 \medskip
-\par \textbf{Woods, J.O.} 2018. Derivation of the Doppler \textsc{lidar} measurement model in the inertial and \textsc{ned} frames. \textit{IM--TM--2018--01}.
+\par\textbf{Woods, J.O.} 2018. Observability and sensitivity analyses for attitude estimation using a gimballed gyroscope. \textit{IM--TM--2018--04}.
 
 \medskip
-\par \textbf{Woods, J.O.} 2018. A dual \textsc{marg} complementary filter for attitude state estimation while drilling. \textit{IM--TM--2017--04}.
+\par \textbf{Woods, J.O.} 2018. Position and velocity variance growth during dead reckoning of a drill. \textit{IM--TM--2018--02}.
+
+\medskip
+\par \textbf{Woods, J.O.} 2018. Derivation of the Doppler \textsc{lidar} measurement model in the inertial and topocentric frames. \textit{IM--TM--2018--01}.
+
+\medskip
+\par Crain, T.C.; \textbf{Woods, J.O.}; Baine, M.; Moore, J.; Getchius, J.; Ronalds, A.; Stewart, S. 2018. Cislunar navigation architecture study. \textit{IMDM--9}.
+
+\medskip
+\par \textbf{Woods, J.O.} 2017. A dual \textsc{marg} complementary filter for attitude state estimation while drilling. \textit{IM--TM--2017--04}.
 
 \medskip
 \par \textbf{Woods, J.O.}; Christian, J.A. 2014. A real-time, software-based \textsc{3d} sensor simulator. ASEL Technical Memorandum: \textit{ASEL--14--005}.
