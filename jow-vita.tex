@@ -209,7 +209,7 @@
 %\includegraphics[width=2in]{programming-graph.pdf}%
 \begin{tikzpicture}
 \begin{axis}[ybar
-			, symbolic x coords={C++, C, Ruby, Python},
+			, symbolic x coords={C++, C, Ruby, Python, Matlab},
 			, ylabel={years}
 			, ylabel near ticks
 			, ymajorgrids=true
@@ -228,10 +228,11 @@
 			, xmajorticks=false
 			]
 \addplot+[point meta=explicit symbolic,fill=black,draw=white] coordinates {
-	(C++,16) [C\footnotesize{++}]
-	(C,10) [C]
-	(Ruby,9) [Ruby]
-	(Python,7) [Python]
+	(C++,17) [C\footnotesize{++}]
+	(C,11) [C]
+	(Ruby,10) [Ruby]
+	(Python,8) [Python]
+	(Matlab,2) [Matlab]
 };
 \end{axis}
 \end{tikzpicture}
@@ -282,7 +283,8 @@ $^\dagger$\,{\footnotesize indicates code contributed to library}\newline
 $^\ddagger$\,{\footnotesize indicates primary authorship}
 
 \medskip
-\emph{Software}\ 
+\emph{Software}\
+Copernicus, 
 Git,
 Gnuplot,
 Emacs,
@@ -320,7 +322,6 @@ National Merit Scholarship											\rdate{2002}\newline
   \item Mission and trajectory design --- \textsc{nova-c} lunar lander
   \item Navigation filters and simulation sensor models --- \textsc{Im}'s Terrestrial Return Vehicle / Universal Return Vehicle, Moon Express \textsc{mx}-1
   \item Payload requirements, \textsc{gn\&c} design --- Axiom commercial space station module
-  \item Dilution of precision study for cislunar navigation
   \item Error budget analysis and filter prototype --- aircraft-based gravimetry
   \item Measurement models and filter prototype --- \textsc{Gps}-denied planetary navigation
 %  \item Responsible for universal navigation filter in \textsc{im}'s universal flight software, to be flown on a deorbiter (Terrestrial Return Vehicle, or \textsc{trv}) and Moon Express' moon lander; documented and re-derived filter; wrote and validated sensor models in \textsc{nasa} \textsc{trick} physics simulator
@@ -369,7 +370,8 @@ National Merit Scholarship											\rdate{2002}\newline
 
 \vskip -1em
 \textbf{Black Rock Rangers}\newline
-\emph{Ranger} \rdate{2018--\textsc{present}}
+\emph{Ranger} \rdate{2018--\textsc{present}}\newline
+\emph{Green Dot} \rdate{2019--\textsc{present}}
 
 \medskip
 \textbf{Starship Factory}\newline
