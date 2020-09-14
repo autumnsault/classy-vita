@@ -1,8 +1,8 @@
 \documentclass[12pt,letterpaper]{article}
 
-\def\myauthor{John~O.~``Juno''~Woods}
+\def\myauthor{Juno~Woods}
 \def\mytitle{jow-vita}
-\def\myemail{john.o.woods@gmail.com}
+\def\myemail{autumnsault@gmail.com}
 \def\myweb{johnowoods}
 \def\myphone{703-801-2625}
 \def\mykeywords{
@@ -35,6 +35,7 @@
 \usepackage{textcomp}
 \usepackage{url}
 \usepackage{fancyhdr}
+%\headheight 15ptz
 \usepackage{lastpage}
 %\usepackage{ocgtools}
 \usepackage{enumitem}
@@ -43,6 +44,7 @@
 %\usepackage{mathdesign}
 %\usepackage[no-math]{fontspec}
 \usepackage{microtype}
+\usepackage{bold-extra}
 \usepackage[margin=1.125in,top=1.375in,right=1in,left=2in]{geometry}
 \usepackage[strict]{changepage}
 \usepackage[
@@ -131,7 +133,7 @@
 %\renewcommand{\date}[1]{{\addfontfeature{Numbers=OldStyle} #1}}
 \newcommand{\rdate}[1]{{\hfill #1}}
 \renewcommand{\date}[1]{{#1}}
-\renewcommand{\labelitemi}{-} 
+\renewcommand{\labelitemi}{-}
 
 %\setmainfont[
 %  Ligatures={TeX,Common},
@@ -150,21 +152,21 @@
 
 \begin{document}\flushbottom
 \pagestyle{fancy} \setlength\headwidth{6.5in}
-\rhead{\textsc{Dr.~John~O.~``Juno''~Woods --- curriculum vitae --- \thepage{} of \pageref*{LastPage}}} \cfoot{}
+\rhead{\textsc{Dr.~Juno~Woods --- curriculum vitae --- \thepage{} of \pageref*{LastPage}}} \cfoot{}
 \thispagestyle{empty}
 \begin{adjustwidth}{-1in}{}
 {\Huge
   {\textsc{%
+    %{%\addfontfeature{Style=TitlingCaps}
+    %J}\kern-1.0ptohn 
+    %{%\addfontfeature{Style=TitlingCaps}
+    %O}\kern-2pt.~``%
     {%\addfontfeature{Style=TitlingCaps}
-    J}\kern-1.0ptohn 
-    {%\addfontfeature{Style=TitlingCaps}
-    O}\kern-2pt.~``%
-    {%\addfontfeature{Style=TitlingCaps}
-    J}\kern-2ptuno''~%
+    J}\kern-2ptuno~%
     {%\addfontfeature{Style=TitlingCaps}
     W}\kern-2.5ptoods, PhD}
   }
-}
+  }
 %
 {
   \begin{minipage}[b]{1.3in}
@@ -192,11 +194,10 @@
 \smallskip
 \mhead{Education}%
 \textbf{The University of Texas at Austin,} Austin, Texas \newline
-\emph{Doctor of Philosophy%, Cell \& Molecular Biology (Bioinformatics)} 
-}\rdate{2007--2013}
+\emph{Doctor of Philosophy, Cell \& Molecular Biology (Bioinformatics)}\rdate{2007--2013}
 \begin{itemize*}
-  \item National Science Foundation Fellow (2009--2012)%, \href{http://cssb.utexas.edu/}{Center for Systems \& Synthetic Biology}
-  \item Dissertation: \href{https://www.dropbox.com/s/87v8j47mxo0afgj/diss.pdf}{Predicting gene--phenotype associations in humans and other species from orthologous and paralogous phenotypes}
+  \item National Science Foundation Fellow (2009--2012)%, \href{http://cssb.utexas.edu/}{Center for Systems \& Synthetic Biology} % 3.7646 GPA
+%  \item Dissertation: \href{https://www.dropbox.com/s/87v8j47mxo0afgj/diss.pdf}{Predicting gene--phenotype associations in humans and other species from orthologous and paralogous phenotypes}
   \item Advisor: Dr.~Edward~M.~Marcotte
 \end{itemize*}
 
@@ -204,10 +205,217 @@
 \textbf{Virginia Polytechnic Institute \& State University,} Blacksburg, Virginia \newline
 \emph{Bachelor of Science, Computer Science}, magna cum laude \rdate{2002--2007}
 \begin{itemize*}
-  %\item Graduated \emph{magna cum laude}
+  %\item Graduated \emph{magna cum laude} % 3.66 GPA
   \item Minors in Mathematics, Philosophy, and Russian
 \end{itemize*}
 %
+\bigskip
+\mhead{Professional \newline Appointments}%
+\vskip -1em
+%\textbf{Juno Space, \textsc{\textbf{llc}}}, Oakland, California \newline
+%\emph{Owner, Co-Founder} \rdate{\textsc{apr}~2020--\textsc{present}}
+%\begin{itemize*}
+%  \item Consulting with Bay Area space startups on aerospace/\textsc{gn\&c} technology and strategy; \textsc{nasa} grantwriting
+%  \item Designing open source spacecraft sensor systems to lower cost of entry for small players in civil aerospace
+%  \item Refactoring open source star tracker in \Cpp\ and Python
+%\end{itemize*}
+%\medskip
+\textbf{Open Lunar Foundation,} San Francisco, California \newline
+\emph{Contractor, Research and Strategy} \rdate{\textsc{apr}~2020--\textsc{jul}~2020} \\
+\emph{Director of Engineering Research and Strategy} \rdate{\textsc{jul}~2020--\textsc{present}}
+\begin{itemize*}
+  \item After \textsc{covid-19}-induced pivot, assisted small team with developing strategy for a space industry non-profit focused on lunar settlement
+  \item Examined interventions related to export control regulations, open source in the space industry
+  \item Created business plans, engineering schedules, and financial models for various for-profit interventions
+\end{itemize*}
+\emph{Guidance, Navigation, \& Control} \rdate{\textsc{oct}~2019--\textsc{apr}~2020}
+\begin{itemize*}
+  \item Designs and analyses for open source spacecraft (cubesat, lunar orbiter, and lunar lander); developed open source tools for sensor trades (linear covariance analysis, q-method extended Kalman filter prototype, orbit determination prototype, patched conic trajectory optimizer); derived radiometric measurement models; supervised graduate student working trajectory design (\textsc{cr3bp} trajectory optimizer)
+\end{itemize*}
+  
+\medskip
+\textbf{Intuitive Machines,} Houston, Texas \newline
+\emph{Senior Development Engineer} \rdate{\textsc{jun}~2015--\textsc{sep}~2019} % June 22 - Sep 27
+\begin{itemize*}
+  \item \textsc{Gn\&c} analyses for \textsc{nova-c} lunar lander (\textsc{Nasa clps}): trajectory design (patched conic) and attitude timeline specification; trajectory optimization with Copernicus; mission design and analysis; landing hazard analysis; terrain-relative navigation and hazard-relative navigation camera specification; \textsc{gn\&c} uplink bandwidth requirements based on Chebyshev trajectory study; linear covariance analyses for radiometric measurements and terrain-relative navigation; simulation \textsc{imu} model; measurement model derivations; reaction control system trade study
+  \item Documented and re-derived filters and measurement models to be flown on de-orbiter (Universal Return Vehicle) and moon lander (Moon Express \textsc{mx}-1)
+  \item Designed \textsc{iss} rendezvous/berthing plan and preliminary \textsc{gn\&c} design including sensor trades for Axiom commercial space station; prototyped quaternion feedback (eigenaxis) control algorithm; implemented candidate optimal group jet selection algorithm; performed control authority analysis
+  \item Implemented magnetometer, angular rate, and gravity (\textsc{marg}) complementary filter for drilling system attitude estimation
+  \item Performed observability analysis of gimbaled single-axis rate-integrating gyroscope for gyrocompassing; built batch least squares calibration and estimation strategy in \textsc{Matlab}
+  \item Mission hardware and software support, wrote measurement models and extended Kalman filter for \textsc{gps}-denied planetary navigation and gravimetry using Doppler \textsc{lidar}
+  \item Studied cislunar navigation architectures, including radiometric ranging, with focus on range dilution of precision
+  \item Developed open source Python attitude and unit quaternion library (pyquat)
+%  \item Responsible for universal navigation filter in \textsc{im}'s universal flight software, to be flown on a deorbiter (Terrestrial Return Vehicle, or \textsc{trv}) and Moon Express' moon lander; documented and re-derived filter; wrote and validated sensor models in \textsc{nasa} \textsc{trick} physics simulator
+%  \item Wrote engineering requirements for payloads and maintained \textsc{gn\&c} requirements for rendezvous and docking of Axiom commercial space station modules with \textsc{iss}; implemented attitude control and targeting algorithms and performed solar power study; created mission design
+% 
+%  \item Designed and implemented multiple dual-state extended Kalman filters and complementary filters for aircraft, spacecraft, and drilling systems
+%  \item Performed error budget analysis and designed and prototyped \textsc{ekf} for gravimetry and \textsc{gps}-denied planetary navigation
+\end{itemize*}
+
+\bigskip
+\mhead{Academic \newline Appointments}%
+\textbf{Applied Space Exploration Laboratory,} West Virginia University \newline
+\emph{Post-doctoral Fellow --- Aerospace Engineer} \rdate{\textsc{jan}~2014--\textsc{jun}~2015}
+\begin{itemize*}
+  \item Developed fast, accurate \textsc{lidar}-based \textsc{6\,dof} pose initialization strategy for non-cooperative rendezvous; derived/implemented dual inertial state \textsc{ekf} with asynchronous measurement updates
+  \item Developed open source Open\textsc{gl}-based \textsc{3d} sensor simulator, \textsc{Glidar}
+  \item Reviewed remote sensing technologies for space natural resource surveying and utilization
+  \item Mentored and collaborated with grad students and an undergraduate; provided feedback and research guidance on space sextant, horizon optical navigation, and \textsc{mems} \textsc{imu} swarm fault detection, isolation, and recovery
+\end{itemize*}
+
+\medskip
+\textbf{Center for Systems \& Synthetic Biology,} The University of Texas at Austin\newline
+\emph{National Science Foundation Fellow; Graduate Research Assistant}  \rdate{2007--2014}
+\begin{itemize*}
+  \item Designed and implemented algorithms and data structures in Python, Perl, Ruby, and \textsc{c}/\Cpp; wrote software for automating processing of large data sets and validating hypotheses%, by quickly predicting gene--disease and gene--phenotype associations
+  %\item Researched, designed, and wrote statistical software for searching for genes under various types of selection (positive, purifying, relaxed)
+  %\item Invalidated a hypothesis about \textsc{hiv} reservoirs using viral evolution simulation
+  %\item Designed scheme for re-engineering cellular metabolism in \textit{E.~coli}, and partially implemented it (wet lab)
+\end{itemize*}
+
+\medskip
+\textbf{Dept. of Chemistry \& Biochemistry,} The University of Texas at Austin\newline
+\emph{Graduate Teaching Assistant} \rdate{2008, 2013}
+%\begin{itemize*}
+%  \item Served as \textsc{ta} for Biochemistry, Introduction to Bioinformatics (graduate level), and Chemistry for non-science majors
+%  \item Rewrote curriculum for Introduction to Bioinformatics in Python (previously in Perl)
+%\end{itemize*}
+
+\bigskip
+\mhead{Patents}%
+\par\vspace{-\baselineskip}Marcotte, E.M.; McGary, K.; Wallingford, J.; Park, T.J.; \textbf{Woods,~J.O.}; Cha,~H.J. 12 August 2012. Orthologous phenotypes and non-obvious human disease models. \textit{U.S.\ Patent Application Publication 2012/0215458 A1}.
+
+%\bigskip
+\newpage
+\mhead{Articles}%
+\par\vspace{-\baselineskip}\textit{List of non-aerospace articles authored available upon request.}
+
+\medskip
+\par\textbf{Woods, J.O.}; Christian, J.A. 2016. \textsc{Lidar}-based relative navigation with respect to non-cooperative objects. \textit{Acta Astronautica 126}: pp.\ 298--311.
+
+\medskip
+\par\textbf{Woods, J.O.}; Christian, J.A. 2016. \textsc{Glidar}: An OpenGL-based, real-time, and open source 3\textsc{d} sensor simulator for testing computer vision algorithms. \textit{Journal of Imaging 2}(1).
+
+%\medskip
+%\par\textbf{Woods, J.O.}; Tien, M.Z.; Marcotte, E.M. April 2015. Interrogating conserved elements of diseases using Boolean combinations of orthologous phenotypes. \textit{BioR$\chi$iv}.
+%
+%\medskip
+%\par\textbf{Woods, J.O.}; Singh-Blom, U.M.; Laurent, J.M.; McGary, K.L.; Marcotte, E.M. January 2013. Prediction of gene--phenotype associations in humans, mice, and plants using phenologs. \textit{BMC Bioinformatics 14}: p.\ 203.
+%
+%\medskip
+%\par Singh-Blom, U.M.; Natarajan, N.; Tewari, A.; \textbf{Woods, J.O.}; Dhillon, I.S.; Marcotte, E.M. January 2013. Prediction and validation of gene--disease associations using methods inspired by social network analyses. \textit{PLoS One 8}(5): e58977.
+%
+%\medskip
+%\par McGary, K.L.; Park, T.J.; \textbf{Woods, J.O.}; Cha, H.J.; Wallingford, J.B.; Marcotte, E.M. April 2010. Systematic discovery of nonobvious human disease models through orthologous phenotypes. \textit{Proceedings of the National Academy of Sciences of the United States of America 107}(14): pp.\ 6544--9.
+%
+%\medskip
+%\par Brennan, T.P.; \textbf{Woods, J.O.}; Sedaghat, A.R.; Siliciano, J.D.; Siliciano, R.F.; Wilke, C.O. September 2009. Analysis of human immunodeficiency virus type 1 viremia and provirus in resting $\textsc{cd4}^{+}$ \textsc{t} cells reveals a novel source of residual viremia in patients on antiretroviral therapy. \textit{Journal of Virology 83}(17): pp.\ 8470--81.
+
+%\newpage
+\bigskip
+\mhead{Conference \newline Proceedings}%
+\par\vspace{-\baselineskip}\textbf{Woods, J.O.}; Christian, J.A.; Evans, T. February 2015. A \textsc{6-dof} pose initialization strategy for \textsc{lidar}-based non-cooperative navigation. In \textit{38th Annual Guidance \& Control Conference}, Breckenridge, CO.
+
+\medskip
+Sell, J.L.; Rhodes, A.; \textbf{Woods, J.O.}; Christian, J.A.; Evans, T. 2014. In \textit{AIAA/AAS Astrodynamics Specialist Conference}, San Diego, CA.
+
+%\bigskip
+%\mhead{Posters}%
+%\par\vspace{-\baselineskip}\textbf{Woods, J.O.}; Singh-Blom, U.M.; Laurent, J.; McGary, K.L.; Marcotte, E.M. 20--25 February 2012. In \textit{Complex Traits: Genomics and Computational Approaches}, Keystone Symposia, Breckenridge, CO.
+%
+%\medskip
+%\par \textbf{Woods, J.O.}; Singh-Blom, U.M.; McGary, K.L.; Marcotte, E.M. 13--16 November 2010. In \textit{From Functional Genomics to Systems Biology},  EMBL Heidelberg, Heidelberg, Germany.
+%
+\bigskip
+\mhead{Technical \newline Reports}%
+\par\vspace{-\baselineskip}\textit{Some internal technical report titles have been changed for external clarity or to maintain client confidentiality.}
+
+\medskip
+\par\textbf{Woods, J.O.} 2019. Navigation filter design towards a lunar lander. \textit{OLF--GNC--2019--02}, Open Lunar Foundation, San Francisco, CA. \textit{Work in progress, ceased and published early due to pandemic.} \href{https://github.com/openlunar/navmemos/raw/master/filter/filter.pdf}{github.com/openlunar/navmemos/ raw/master/filter/filter.pdf}
+
+\medskip
+\par\textbf{Woods, J.O.} 2019. Two-way range and range-rate observables in a sequential filter. \textit{OLF--GNC--2019--01}, Open Lunar Foundation, San Francisco, CA. \href{https://github.com/openlunar/navmemos/raw/master/radiometric/memo.pdf}{github.com/openlunar/navmemos/raw/master/radiometric/memo.pdf}
+
+\medskip
+\par\textbf{Woods, J.O.} 2018. Observability and sensitivity analyses for attitude estimation using a gimballed gyroscope. \textit{IM--TM--2018--04}.
+
+\medskip
+\par \textbf{Woods, J.O.} 2018. Position and velocity variance growth during dead reckoning of a drill. \textit{IM--TM--2018--02}.
+
+\medskip
+\par \textbf{Woods, J.O.} 2018. Derivation of the Doppler \textsc{lidar} measurement model in the inertial and topocentric frames. \textit{IM--TM--2018--01}.
+
+\medskip
+\par Crain, T.C.; \textbf{Woods, J.O.}; Baine, M.; Moore, J.; Getchius, J.; Ronalds, A.; Stewart, S. 2018. Cislunar navigation architecture study. \textit{IMDM--9}.
+
+\medskip
+\par \textbf{Woods, J.O.} 2017. A dual \textsc{marg} complementary filter for attitude state estimation while drilling. \textit{IM--TM--2017--04}.
+
+\medskip
+\par \textbf{Woods, J.O.}; Christian, J.A. 2014. A real-time, software-based \textsc{3d} sensor simulator. ASEL Technical Memorandum: \textit{ASEL--14--005}.
+
+\medskip
+\par Sell, J.; Rhodes, A.; \textbf{Woods, J.}; Christian, J.A. 2014. Theoretical foundations of pose estimation and covariance computation for non-cooperative relative navigation. ASEL Technical Memorandum: \textit{ASEL--14--001}.
+%
+%\medskip
+%\par Natarajan, N.; Singh-Blom, U.M.; Tewari, A.; \textbf{Woods, J.O.}; Dhillon, I.S.; Marcotte, E.M. 2011. Predicting gene--disease associations using multiple species data. UTCS Technical Report: \textit{TR--11--37}.
+
+\bigskip
+%\newpage
+\mhead{Honors \& \newline Awards}%
+Paul Harris Fellowship                                              \rdate{2018}\newline
+Necklace Factory / Burning Man Art Award                            \rdate{2016}\newline
+White House Champion of Change				\rdate{2014}\newline
+National Science Foundation Graduate Research Fellowship			\rdate{2009--2012}\newline
+``Best of Austin'' Award: Best Activist	(\emph{The Austin Chronicle})							\rdate{2011}\newline
+Scholar, Netroots Nation											\rdate{2011}\newline
+Initiate, Friar Society (University of Texas at Austin)				\rdate{2010}\newline
+Graduate School Recruitment Fellowship (University of Texas at Austin) \rdate{2007}\newline
+Black Belt, Tae Kwon Do (Chung Do Kwan)								\rdate{2006}\newline
+Member, Hillcrest Honors Community (Virginia Tech)				\rdate{2003--2007}\newline
+Inductee, $\Upsilon\Pi\mathrm{E}$ (Virginia Tech)					\rdate{2006}\newline
+Gilbert \& Lucille Seay Scholarship (Virginia Tech)					\rdate{2005}\newline
+National Merit Scholarship											\rdate{2002}%\newline
+
+\bigskip
+\mhead{Community Contributions}
+\vskip -1em
+\textbf{Black Rock Rangers}\newline
+\emph{Ranger} \rdate{2018--\textsc{present}}\newline
+\emph{Green Dot} \rdate{2019--\textsc{present}}
+
+\medskip
+\textbf{Ruby Science Foundation (SciRuby)} \newline %The Ruby Science Foundation: The SciRuby Project}\newline
+\emph{Director \& Co-Founder} \rdate{2012--\textsc{present}}
+
+\medskip
+\textbf{Austin Swing Syndicate}\newline
+\emph{At-Large Board Member, Secretary} \rdate{2012--2014}%\newline%
+
+\medskip
+\textbf{Texas Gun Sense}\newline
+\emph{Co-founder, Advisory Board Member} \rdate{2013--\textsc{present}}%\newline
+
+%\bigskip
+%\mhead{Media}%
+%\par\vspace{-\baselineskip}\textit{Media appearances available upon request.}
+\bigskip
+\mhead{Activities \& \newline Interests}%
+dance (lindy hop and ballet),
+circus arts,
+space exploration,
+large-scale interactive art
+
+\bigskip
+%French, German, Mandarin (smattering)
+%\newpage
+\mhead{Foreign\newline Languages}%
+English (native tongue), 
+Spanish (conversational), 
+Russian (needs refreshing),
+Mandarin (learning)
+
+\bigskip
 \begin{wrapfigure}{R}{2in}
 \vspace{-25pt}%
 \centering%
@@ -243,25 +451,24 @@
 \end{tikzpicture}
 \vspace{-15pt}%
 \end{wrapfigure}%
-%
-\bigskip
+
 \mhead{Coding \newline Proficiencies}%
+%
 %\emph{Strong}\ 
 \textsc{c},
 \Cpp\ (including modern extensions),
 Ruby,
 Python (including \textsc{c} extensions),
 \LaTeX,
-\textsc{gnu} Octave and \textsc{Matlab},
-shell scripting%,
+\textsc{gnu} Octave and \textsc{Matlab}
 
 \medskip
 \emph{Familiar}\ 
-Java, Agile development methodology, Perl,
+Java, Agile development methodology, Perl, 
 %\textsc{Fortran}~95,
 %Perl,
-\textsc{R},
-\textsc{sql}
+%\textsc{R},
+\textsc{sql}, shell scripting
 
 \medskip
 \emph{Libraries}\ 
@@ -281,14 +488,13 @@ Open\textsc{gl},
 %\textsc{glm},
 Eigen,
 \textsc{Trick} simulator,
-\textsc{Nm}atrix$^\ddagger$,
+\textsc{Nm}atrix$^\ddagger$ (Ruby linear algebra library),
 Pyquat$^\ddagger$ (Python attitude library),
 \textsc{Glidar}$^\ddagger$ (\textsc{3d lidar} simulator),
-Starlib$^\ddagger$ (complete rewrite of open source star tracker)
-
+Starlib$^\ddagger$ (ongoing rewrite of open source star tracker)
+\\*
 \smallskip
-$^\dagger$\,{\footnotesize indicates code contributed to library}\newline
-$^\ddagger$\,{\footnotesize indicates primary authorship}
+$^\dagger$\,{\footnotesize indicates code contributed to library}\hskip 1em$^\ddagger$\,{\footnotesize indicates primary authorship}
 
 \medskip
 \emph{Software}\
@@ -306,234 +512,7 @@ Valgrind,
 \textsc{cm}ake,
 Ubuntu,
 Mac \textsc{os\,x}
-
-\bigskip
-\mhead{Professional \newline Appointments}%
-\vskip -1em
-\textbf{Open Lunar Foundation,} San Francisco, California \newline
-\emph{Guidance, Navigation, \& Control} \rdate{\textsc{oct}~2019--\textsc{apr}~2020}
-\begin{itemize*}
-  \item Developed open source linear covariance analysis tool for sensor selection, including horizon-based optical navigation
-  \item Orbit determination, radiometric strategy design, and covariance analysis using Orekit
-  \item Prototyped $q$-method extended Kalman filter (for attitude)
-  \item Supervised graduate student developing an open source tool for generating circular restricted three-body problem cislunar trajectories
-  \item Laid off as part of \textsc{covid}-19-related force reduction
-\end{itemize*}
-  
-\medskip
-\textbf{Intuitive Machines,} Houston, Texas \newline
-\emph{Senior Development Engineer} \rdate{\textsc{jun}~2015--\textsc{oct}~2019}
-\begin{itemize*}
-  \item Mission and trajectory design --- \textsc{nova-c} lunar lander
-  \item Navigation filters and simulation sensor models --- \textsc{Im}'s Terrestrial Return Vehicle / Universal Return Vehicle, Moon Express \textsc{mx}-1
-  \item Payload requirements, \textsc{gn\&c} design --- Axiom commercial space station module
-  \item Error budget analysis and filter prototype --- aircraft-based gravimetry
-  \item Measurement models and filter prototype --- \textsc{Gps}-denied planetary navigation
-%  \item Responsible for universal navigation filter in \textsc{im}'s universal flight software, to be flown on a deorbiter (Terrestrial Return Vehicle, or \textsc{trv}) and Moon Express' moon lander; documented and re-derived filter; wrote and validated sensor models in \textsc{nasa} \textsc{trick} physics simulator
-%  \item Wrote engineering requirements for payloads and maintained \textsc{gn\&c} requirements for rendezvous and docking of Axiom commercial space station modules with \textsc{iss}; implemented attitude control and targeting algorithms and performed solar power study; created mission design
-%  \item Studied cislunar navigation architectures with focus on range dilution of precision
-%  \item Designed and implemented multiple dual-state extended Kalman filters and complementary filters for aircraft, spacecraft, and drilling systems
-%  \item Performed error budget analysis and designed and prototyped \textsc{ekf} for gravimetry and \textsc{gps}-denied planetary navigation
-\end{itemize*}
-
-\bigskip
-\mhead{Academic \newline Appointments}%
-\textbf{Applied Space Exploration Laboratory,} West Virginia University \newline
-\emph{Post-doctoral Fellow --- Aerospace Engineer} \rdate{\textsc{jan}~2014--\textsc{jun}~2015}
-\begin{itemize*}
-  \item Developed fast, accurate \textsc{lidar}-based \textsc{6\,dof} pose initialization strategy for non-cooperative rendezvous
-  \item Derived/implemented dual inertial state \textsc{ekf} with asynchronous measurement updates
-  \item Developed open source Open\textsc{gl}-based \textsc{3d} sensor simulator, \textsc{Glidar}
-  \item Studied remote sensing technologies for space natural resource surveying and utilization
-  \item Mentored and collaborated with grad students and an undergraduate
-\end{itemize*}
-
-\medskip
-\textbf{Center for Systems \& Synthetic Biology,} The University of Texas at Austin\newline
-\emph{National Science Foundation Fellow; Graduate Research Assistant}  \rdate{2007--2014}
-\begin{itemize*}
-  \item Designed and implemented algorithms and data structures in Python, Perl, Ruby, and \textsc{c}/\Cpp
-  %\item Formulated hypotheses relating to an aspect of evolutionary theory called deep homology
-  \item Wrote software for automating processing of large data sets and validating hypotheses%, by quickly predicting gene--disease and gene--phenotype associations
-  %\item Researched, designed, and wrote statistical software for searching for genes under various types of selection (positive, purifying, relaxed)
-  %\item Invalidated a hypothesis about \textsc{hiv} reservoirs using viral evolution simulation
-  %\item Designed scheme for re-engineering cellular metabolism in \textit{E.~coli}, and partially implemented it (wet lab)
-\end{itemize*}
-
-\medskip
-\textbf{Dept. of Chemistry \& Biochemistry,} The University of Texas at Austin\newline
-\emph{Graduate Teaching Assistant} \rdate{2008, 2013}
-%\begin{itemize*}
-%  \item Served as \textsc{ta} for Biochemistry, Introduction to Bioinformatics (graduate level), and Chemistry for non-science majors
-%  \item Rewrote curriculum for Introduction to Bioinformatics in Python (previously in Perl)
-%\end{itemize*}
-
-\bigskip
-\mhead{Community Contributions}
-\vskip -1em
-\textbf{Black Rock Rangers}\newline
-\emph{Ranger} \rdate{2018--\textsc{present}}\newline
-\emph{Green Dot} \rdate{2019--\textsc{present}}
-
-%\medskip
-%\textbf{Starship Factory}\newline
-%\emph{Artist, Organizer} \rdate{2016--2017}%\newline
-%\emph{Organizer} \rdate{2017}
-%\begin{itemize*}
-%  \item Organized artist collective which attempts to envision and bring about a future worth looking forward to
-%  \item Created interactive art for Burning Flipside (2017) and Burning Man (2016 and 2017)
-%\end{itemize*}
-
-\medskip
-\textbf{Ruby Science Foundation (SciRuby)} \newline %The Ruby Science Foundation: The SciRuby Project}\newline
-\emph{Director \& Co-Founder} \rdate{2012--\textsc{present}}
-%\begin{itemize*}
-%  \item Wrote \textsc{Nm}atrix, dense and sparse linear algebra software for Ruby, in \textsc{c}/\Cpp
-%  \item Organized the SciRuby Project, dedicated to enhancing the Ruby language's numerical and scientific computing facilities
-%  \item Applied for grants, mentored graduate and undergraduate students
-%  \item Wrote four successful Google Summer of Code applications and directed mentors
-%\end{itemize*}
-
-\medskip
-\textbf{Austin Swing Syndicate}\newline
-\emph{At-Large Board Member, Secretary} \rdate{2012--2014}%\newline
-%\emph{Secretary} \rdate{2013--2014}
-%\begin{itemize*}
-  %\item Revised bylaws, counseled board on non-profit law and best practices
-  %\item Managed teams of volunteers
-%  \item Created policy for providing grants to other organizations for events furthering organizational mission of promoting lindy hop, balboa, shag, and other traditional jazz dances
-%\end{itemize*}
-
-\medskip
-\textbf{Texas Gun Sense}\newline
-\emph{Co-founder, Advisory Board Member} \rdate{2013--\textsc{present}}%\newline
-%\emph{Advisory Board Member} \rdate{2014--\textsc{present}}
-%\begin{itemize*}
-%  \item Co-founded an organization promoting a fact-based dialogue around the belief that gun ownership is an individual right, best preserved by ensuring that firearms stay out of the hands of criminals
-%  \item Organized and motivated volunteers to testify and lobby at the state level
-%  \item Wrote bylaws and 501(c)(3) filing (approved on first attempt)
-%  \item Successfully devised legislative strategies to kill bills, two sessions in a row
-%  \item Wrote talking points for lawmakers to use in floor debates
-%  \item Conferred with legislators and Texas Legislative Council to draft a universal background checks bill
-%  \item Served as official spokesperson, including hundreds of interviews (television, radio, film; list available upon request)
-%\end{itemize*}
-
-\newpage
-%\bigskip
-\mhead{Patents}%
-\par\vspace{-\baselineskip}Marcotte, E.M.; McGary, K.; Wallingford, J.; Park, T.J.; \textbf{Woods,~J.O.}; Cha,~H.J. 12 August 2012. Orthologous phenotypes and non-obvious human disease models. \textit{U.S.\ Patent Application Publication 2012/0215458 A1}.
-
-\bigskip
-\mhead{Articles}%
-\par\vspace{-\baselineskip}\textbf{Woods, J.O.}; Christian, J.A. 2016. \textsc{Lidar}-based relative navigation with respect to non-cooperative objects. \textit{Acta Astronautica 126}: pp.\ 298--311.
-
-\medskip
-\par\textbf{Woods, J.O.}; Christian, J.A. 2016. \textsc{Glidar}: An OpenGL-based, real-time, and open source 3\textsc{d} sensor simulator for testing computer vision algorithms. \textit{Journal of Imaging 2}(1).
-
-\medskip
-\par\textbf{Woods, J.O.}; Tien, M.Z.; Marcotte, E.M. April 2015. Interrogating conserved elements of diseases using Boolean combinations of orthologous phenotypes. \textit{BioR$\chi$iv}.
-
-\medskip
-\par\textbf{Woods, J.O.}; Singh-Blom, U.M.; Laurent, J.M.; McGary, K.L.; Marcotte, E.M. January 2013. Prediction of gene--phenotype associations in humans, mice, and plants using phenologs. \textit{BMC Bioinformatics 14}: p.\ 203.
-
-\medskip
-\par Singh-Blom, U.M.; Natarajan, N.; Tewari, A.; \textbf{Woods, J.O.}; Dhillon, I.S.; Marcotte, E.M. January 2013. Prediction and validation of gene--disease associations using methods inspired by social network analyses. \textit{PLoS One 8}(5): e58977.
-
-\medskip
-\par McGary, K.L.; Park, T.J.; \textbf{Woods, J.O.}; Cha, H.J.; Wallingford, J.B.; Marcotte, E.M. April 2010. Systematic discovery of nonobvious human disease models through orthologous phenotypes. \textit{Proceedings of the National Academy of Sciences of the United States of America 107}(14): pp.\ 6544--9.
-
-\medskip
-\par Brennan, T.P.; \textbf{Woods, J.O.}; Sedaghat, A.R.; Siliciano, J.D.; Siliciano, R.F.; Wilke, C.O. September 2009. Analysis of human immunodeficiency virus type 1 viremia and provirus in resting $\textsc{cd4}^{+}$ \textsc{t} cells reveals a novel source of residual viremia in patients on antiretroviral therapy. \textit{Journal of Virology 83}(17): pp.\ 8470--81.
-
-\bigskip
-\mhead{Conference \newline Proceedings}%
-\par\vspace{-\baselineskip}\textbf{Woods, J.O.}; Christian, J.A.; Evans, T. February 2015. A \textsc{6-dof} pose initialization strategy for \textsc{lidar}-based non-cooperative navigation. In \textit{38th Annual Guidance \& Control Conference}, Breckenridge, CO.
-
-\medskip
-Sell, J.L.; Rhodes, A.; \textbf{Woods, J.O.}; Christian, J.A.; Evans, T. 2014. In \textit{AIAA/AAS Astrodynamics Specialist Conference}, San Diego, CA.
-
-\bigskip
-\mhead{Posters}%
-\par\vspace{-\baselineskip}\textbf{Woods, J.O.}; Singh-Blom, U.M.; Laurent, J.; McGary, K.L.; Marcotte, E.M. 20--25 February 2012. In \textit{Complex Traits: Genomics and Computational Approaches}, Keystone Symposia, Breckenridge, CO.
-
-\medskip
-\par \textbf{Woods, J.O.}; Singh-Blom, U.M.; McGary, K.L.; Marcotte, E.M. 13--16 November 2010. In \textit{From Functional Genomics to Systems Biology},  EMBL Heidelberg, Heidelberg, Germany.
-\newpage
-\mhead{Technical \newline Reports}%
-\par\vspace{-\baselineskip}\textit{Some internal technical report titles have been changed for external clarity or to maintain client confidentiality.}
-
-\medskip
-\par\textbf{Woods, J.O.} 2019. Navigation filter design towards a lunar lander. \textit{OLF--GNC--2019--02}, Open Lunar Foundation, San Francisco, CA. \textit{Work in progress, ceased and published early due to pandemic.} \href{https://github.com/openlunar/navmemos/raw/master/filter/filter.pdf}{github.com/openlunar/navmemos/ raw/master/filter/filter.pdf}
-
-\medskip
-\par\textbf{Woods, J.O.} 2019. Two-way range and range-rate observables in a sequential filter. \textit{OLF--GNC--2019--01}, Open Lunar Foundation, San Francisco, CA. \href{https://github.com/openlunar/navmemos/raw/master/radiometric/memo.pdf}{github.com/openlunar/navmemos/raw/master/radiometric/memo.pdf}
-
-\medskip
-\par\textbf{Woods, J.O.} 2018. Observability and sensitivity analyses for attitude estimation using a gimballed gyroscope. \textit{IM--TM--2018--04}.
-
-\medskip
-\par \textbf{Woods, J.O.} 2018. Position and velocity variance growth during dead reckoning of a drill. \textit{IM--TM--2018--02}.
-
-\medskip
-\par \textbf{Woods, J.O.} 2018. Derivation of the Doppler \textsc{lidar} measurement model in the inertial and topocentric frames. \textit{IM--TM--2018--01}.
-
-\medskip
-\par Crain, T.C.; \textbf{Woods, J.O.}; Baine, M.; Moore, J.; Getchius, J.; Ronalds, A.; Stewart, S. 2018. Cislunar navigation architecture study. \textit{IMDM--9}.
-
-\medskip
-\par \textbf{Woods, J.O.} 2017. A dual \textsc{marg} complementary filter for attitude state estimation while drilling. \textit{IM--TM--2017--04}.
-
-\medskip
-\par \textbf{Woods, J.O.}; Christian, J.A. 2014. A real-time, software-based \textsc{3d} sensor simulator. ASEL Technical Memorandum: \textit{ASEL--14--005}.
-
-\medskip
-\par Sell, J.; Rhodes, A.; \textbf{Woods, J.}; Christian, J.A. 2014. Theoretical foundations of pose estimation and covariance computation for non-cooperative relative navigation. ASEL Technical Memorandum: \textit{ASEL--14--001}.
-
-\medskip
-\par Natarajan, N.; Singh-Blom, U.M.; Tewari, A.; \textbf{Woods, J.O.}; Dhillon, I.S.; Marcotte, E.M. 2011. Predicting gene--disease associations using multiple species data. UTCS Technical Report: \textit{TR--11--37}.
-
-
-%\bigskip
-%\mhead{Invited Talks}%
-%\par\vspace{-\baselineskip}\textsc{Sxsw}edu session: Keeping Schools Secure. 11 March 2015.
 %
-%\medskip
-%\par Texas Conference on School-Based Law Enforcement: Panel Discussion. 2010.
-
-\bigskip
-\mhead{Honors \& \newline Awards}%
-Paul Harris Fellowship                                              \rdate{2018}\newline
-Necklace Factory / Burning Man Art Award                            \rdate{2016}\newline
-White House Champion of Change (Obama Administration)				\rdate{2014}\newline
-National Science Foundation Graduate Research Fellowship			\rdate{2009--2012}\newline
-``Best of Austin'' Award: Best Activist	(\emph{The Austin Chronicle})							\rdate{2011}\newline
-Scholar, Netroots Nation											\rdate{2011}\newline
-Initiate, Friar Society (University of Texas at Austin)				\rdate{2010}\newline
-Graduate School Recruitment Fellowship (University of Texas at Austin) \rdate{2007}\newline
-Black Belt, Tae Kwon Do (Chung Do Kwan)								\rdate{2006}\newline
-Member, Hillcrest Honors Community (Virginia Tech)				\rdate{2003--2007}\newline
-Inductee, $\Upsilon\Pi\mathrm{E}$ (Virginia Tech)					\rdate{2006}\newline
-Gilbert \& Lucille Seay Scholarship (Virginia Tech)					\rdate{2005}\newline
-National Merit Scholarship											\rdate{2002}\newline
-
-\bigskip
-\mhead{Media}%
-\par\vspace{-\baselineskip}\textit{Media appearances available upon request.}
-
-\bigskip
-\mhead{Activities \& \newline Interests}%
-dance (lindy hop and ballet),
-circus arts,
-space exploration,
-large-scale interactive art
-
-\bigskip
-\mhead{Foreign\newline Languages}%
-English (native tongue), 
-Spanish (conversational), 
-Russian (needs refreshing),
-Mandarin (learning)\newline
-%French, German, Mandarin (smattering)
 
 \bigskip
 \mhead{References}%
