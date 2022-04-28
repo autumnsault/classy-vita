@@ -19,7 +19,34 @@
   cv, 
   john, 
   woods, 
-  jow
+  jow,
+  linear covariance analysis,
+  lincov,
+  ekf,
+  extended kalman filter,
+  kalman filter,
+  candidate optimal groups,
+  cog,
+  state estimation,
+  gn\&c,
+  navigation,
+  control,
+  guidance,
+  powered explicit guidance,
+  orbit determination,
+  batch least squares,
+  batch estimator,
+  sequential filter,
+  navigation filter,
+  LunaNet,
+  trajectory optimization,
+  mission design,
+  export control,
+  open source,
+  patched conic,
+  cr3bp,
+  trajectory design,
+  space policy
 }
 
 \setlength\parindent{0pt}
@@ -172,21 +199,19 @@
 {
   \begin{minipage}[b]{1.3in}
     \flushleft \footnotesize   
-    %Houston, \textsc{tx} \\
-    %Oakland, \textsc{ca}
+    \href{tel:\myphone}{\myphone} \\ %\texttt{ï}~
+    \href{mailto:\myemail}{\myemail}
   \end{minipage}
   \hfill
-  \begin{minipage}[b]{2.5in}
+  \begin{minipage}[b]{1.3in}
     \flushright \footnotesize 
-    \href{tel:\myphone}{\myphone} \\ %\texttt{ï}~
-    \href{mailto:\myemail}{\myemail} \\
     github:\href{https://github.com/translunar}{translunar} \\
-    linkedin:\href{https://www.linkedin.com/in/junowoods}{junowoods}
+    linkedin:\href{https://www.linkedin.com/in/translunar}{translunar}
   \end{minipage}
 }\par
 \hrulefill
 
-\centering\small guidance, navigation, \& control\hskip 3mm$\circ$\hskip 3mm computer science\hskip 3mm$\circ$\hskip 3mm mission design \& analysis %evolutionary systems biology
+\centering\small navigation \& state estimation \hskip 3mm$\circ$\hskip 3mm mission design \& analysis \hskip 3mm$\circ$\hskip 3mm systems engineering \hskip 3mm$\circ$\hskip 3mm guidance%evolutionary systems biology
 \vskip-6pt
 \hrulefill
 \end{adjustwidth}  
@@ -213,43 +238,52 @@
 \bigskip
 \mhead{Professional \newline Appointments}%
 \vskip -1em
-%\textbf{Juno Space, \textsc{\textbf{llc}}}, Oakland, California \newline
-%\emph{Owner, Co-Founder} \rdate{\textsc{apr}~2020--\textsc{present}}
-%\begin{itemize*}
-%  \item Consulting with Bay Area space startups on aerospace/\textsc{gn\&c} technology and strategy; \textsc{nasa} grantwriting
-%  \item Designing open source spacecraft sensor systems to lower cost of entry for small players in civil aerospace
-%  \item Refactoring open source star tracker in \Cpp\ and Python
-%\end{itemize*}
-%\medskip
+\textbf{Masten Space Systems,}, Mojave, California \newline
+\emph{\textsc{gn\&c} engineer, 6-\textsc{dof} (contractor)} \rdate{\textsc{jul}~2021--\textsc{present}}
+\begin{itemize*}
+   \item Derived, designed, and prototyped \textsc{ekf} for \textsc{xl}-1 lunar lander
+   \item Designed flight manager for high-level planning of \textsc{gn\&c} activities
+   \item Advised organization on diversity, equity, and inclusion as part of \textsc{de\&i} council
+\end{itemize*}
+%
+\medskip
+\textbf{Metalunar, \textsc{\textbf{llc}}}, Boulder, Colorado / \textbf{Translunar, \textsc{\textbf{llc}}}, Berkeley, California \newline
+\emph{Co-founder} \rdate{\textsc{apr}~2020--\textsc{present}}
+\begin{itemize*}
+  \item Systems engineering: \textsc{gn\&c} systems, optical navigation, and interplanetary radios (LunaNet)
+  \item Business models (system requirements, budget, timeline, market analysis) 
+  \item Proposal writing
+\end{itemize*}
+
+\medskip
 \textbf{Open Lunar Foundation,} San Francisco, California \newline
 %\begin{itemize*}
 %  \item Worked with small team to develop strategy for a space industry non-profit focused on lunar settlement
 %  \item Analyzed 
 %  \item Created business plans, engineering schedules, and financial models for various for-profit interventions
 %\end{itemize*}
-\emph{Senior Researcher} \rdate{\textsc{mar}~2021--\textsc{present}} \\
+\emph{Senior Researcher} \rdate{\textsc{mar}~2021--\textsc{jul}~2021} \\
 \emph{Director of Engineering Research \& Strategy} \rdate{\textsc{jul}~2020--\textsc{mar}~2021} \\
-\emph{Contractor, Research \& Strategy} \rdate{\textsc{apr}~2020--\textsc{jul}~2020} \\
 \emph{Guidance, Navigation, \& Control} \rdate{\textsc{oct}~2019--\textsc{apr}~2020}
 \begin{itemize*}
-  \item Produced designs and analyses for open source spacecraft (cubesat, lunar orbiter, and lunar lander); developed open source tools for sensor trades (linear covariance analysis, extended Kalman filter prototype, orbit determination prototype, patched conic trajectory optimizer); derived radiometric measurement models; supervised graduate student working trajectory design (\textsc{cr3bp} trajectory optimizer)
-  \item Studied positioning, navigation, and timing architectures; crater navigation; export control policy; and open source in the space industry. %Submitted export control advisory opinion request to DDTC.
-  \item Designed business models around optical navigation hardware and interplanetary radios; led \textsc{sbir} Phase I proposal for X/Ka-band LunaNet radio architecture
-  \item Researched multilateral arms control treaties, U.S. export control policy, electronic frontiers, and policy limitations on international collaboration toward peaceful space exploration and settlement; currently writing research articles on these topics
+  \item Designs and analyses: \textsc{ekf}, \textsc{bls} for orbit determination, sensors, trajectory
+%  \item Proposed a pipeline for generating vision-based navigation databases; studied positioning, navigation, and timing architectures %Submitted export control advisory opinion request to DDTC.
+  \item Space policy: multilateral arms control treaties, export control policy, open source, electronic frontiers
 \end{itemize*}
-  
+
 \medskip
 \textbf{Intuitive Machines,} Houston, Texas \newline
 \emph{Senior Development Engineer} \rdate{\textsc{jun}~2015--\textsc{sep}~2019} % June 22 - Sep 27
 \begin{itemize*}
-  \item \textsc{Gn\&c} analyses for \textsc{nova-c} lunar lander (\textsc{Nasa clps}): trajectory design (patched conic) and attitude timeline specification; trajectory optimization with Copernicus; mission design and analysis; landing hazard analysis; terrain-relative navigation and hazard-relative navigation camera specification; \textsc{gn\&c} uplink bandwidth requirements based on Chebyshev trajectory study; linear covariance analyses for radiometric measurements and terrain-relative navigation; simulation \textsc{imu} model; measurement model derivations; reaction control system trade study
-  \item Documented and re-derived filters and measurement models to be flown on de-orbiter (Universal Return Vehicle) and moon lander (Moon Express \textsc{mx}-1)
-  \item Designed \textsc{iss} rendezvous/berthing plan and preliminary \textsc{gn\&c} design including sensor trades for Axiom commercial space station; prototyped quaternion feedback (eigenaxis) control algorithm; implemented candidate optimal group jet selection algorithm; performed control authority analysis
-  \item Implemented magnetometer, angular rate, and gravity (\textsc{marg}) complementary filter for drilling system attitude estimation
-  \item Performed observability analysis of gimbaled single-axis rate-integrating gyroscope for gyrocompassing; built batch least squares calibration and estimation strategy in \textsc{Matlab}
-  \item Mission hardware and software support, wrote measurement models and extended Kalman filter for \textsc{gps}-denied planetary navigation and gravimetry using Doppler \textsc{lidar}
-  \item Studied cislunar navigation architectures, including radiometric ranging, with focus on range dilution of precision
-  \item Developed open source Python attitude and unit quaternion library (pyquat)
+  \item Trajectory design \& optimization; lunar mission design \& analysis (\textsc{Nova-c})%; sensor model simulations%; measurement model derivations; reaction control system trade study
+  \item Responsible for extended Kalman filter, models (Moon Express \textsc{mx}-1)
+  \item \textsc{Iss} rendezvous/berthing plan, preliminary \textsc{gn\&c} design (Axiom) %; prototyped quaternion feedback (eigenaxis) control algorithm; implemented candidate optimal group jet selection algorithm; performed control authority analysis
+  \item State estimation (\textsc{bls}, \textsc{ekf}, complementary) for drilling systems
+%  \item Performed observability analysis of gimbaled single-axis rate-integrating gyroscope for gyrocompassing; built batch least squares calibration and estimation strategy in \textsc{Matlab}
+%  \item Mission hardware and software support, wrote measurement models and extended Kalman filter for
+  \item \textsc{gps}-denied navigation and gravimetry (Doppler \textsc{lidar})
+%  \item Cislunar navigation architectures: dilution of precision
+%  \item Open source Python attitude and unit quaternion library (pyquat)
 %  \item Responsible for universal navigation filter in \textsc{im}'s universal flight software, to be flown on a deorbiter (Terrestrial Return Vehicle, or \textsc{trv}) and Moon Express' moon lander; documented and re-derived filter; wrote and validated sensor models in \textsc{nasa} \textsc{trick} physics simulator
 %  \item Wrote engineering requirements for payloads and maintained \textsc{gn\&c} requirements for rendezvous and docking of Axiom commercial space station modules with \textsc{iss}; implemented attitude control and targeting algorithms and performed solar power study; created mission design
 % 
@@ -262,17 +296,18 @@
 \textbf{Applied Space Exploration Laboratory,} West Virginia University \newline
 \emph{Post-doctoral Fellow --- Aerospace Engineer} \rdate{\textsc{jan}~2014--\textsc{jun}~2015}
 \begin{itemize*}
-  \item Developed fast, accurate \textsc{lidar}-based \textsc{6\,dof} pose initialization strategy for non-cooperative rendezvous; derived/implemented dual inertial state \textsc{ekf} with asynchronous measurement updates
-  \item Developed open source Open\textsc{gl}-based \textsc{3d} sensor simulator, \textsc{Glidar}
-  \item Reviewed remote sensing technologies for space natural resource surveying and utilization
-  \item Mentored and collaborated with grad students and an undergraduate; provided feedback and research guidance on space sextant, horizon optical navigation, and \textsc{mems} \textsc{imu} swarm fault detection, isolation, and recovery
+  \item \textsc{Lidar}-based \textsc{6\,dof} pose initialization strategy for non-cooperative rendezvous; derived/implemented dual inertial state \textsc{ekf} (satellite servicing)% with asynchronous measurement updates
+  \item Open source Open\textsc{gl}-based \textsc{3d} sensor simulator, \textsc{Glidar}
+  \item Remote sensing technologies for resource surveying and utilization
+  \item Mentored and collaborated with grad students and an undergraduate
 \end{itemize*}
 
 \medskip
 \textbf{Center for Systems \& Synthetic Biology,} The University of Texas at Austin\newline
 \emph{National Science Foundation Fellow; Graduate Research Assistant}  \rdate{2007--2014}
 \begin{itemize*}
-  \item Designed and implemented algorithms and data structures in Python, Perl, Ruby, and \textsc{c}/\Cpp; wrote software for automating processing of large data sets and validating hypotheses%, by quickly predicting gene--disease and gene--phenotype associations
+  \item Algorithms and data structures in Python, Perl, Ruby, and \textsc{c}/\Cpp; pipelines and automation for large datasets
+  \item Synthetic biology, \textsc{hiv} evolution, and evolutionary systems biology%, by quickly predicting gene--disease and gene--phenotype associations
   %\item Researched, designed, and wrote statistical software for searching for genes under various types of selection (positive, purifying, relaxed)
   %\item Invalidated a hypothesis about \textsc{hiv} reservoirs using viral evolution simulation
   %\item Designed scheme for re-engineering cellular metabolism in \textit{E.~coli}, and partially implemented it (wet lab)
@@ -281,18 +316,18 @@
 \medskip
 \textbf{Dept. of Chemistry \& Biochemistry,} The University of Texas at Austin\newline
 \emph{Graduate Teaching Assistant} \rdate{2008, 2013}
-%\begin{itemize*}
+\begin{itemize*}
 %  \item Served as \textsc{ta} for Biochemistry, Introduction to Bioinformatics (graduate level), and Chemistry for non-science majors
-%  \item Rewrote curriculum for Introduction to Bioinformatics in Python (previously in Perl)
-%\end{itemize*}
-
+  \item Rewrote curriculum in Python (previously in Perl)
+\end{itemize*}
+%\newpage
 \bigskip
 \mhead{Patents}%
 \par\vspace{-\baselineskip}Marcotte, E.M.; McGary, K.; Wallingford, J.; Park, T.J.; \textbf{Woods,~J.O.}; Cha,~H.J. 12 August 2012. Orthologous phenotypes and non-obvious human disease models. \textit{U.S.\ Patent Application Publication 2012/0215458 A1}.
 
-%\bigskip
-\newpage
-\mhead{Articles}%
+\bigskip
+%\newpage
+\mhead{Highlighted \\ Articles}%
 \par\vspace{-\baselineskip}\textit{List of non-aerospace articles authored available upon request.}
 
 \medskip
@@ -322,7 +357,7 @@
 \par\vspace{-\baselineskip}\textbf{Woods, J.O.}; Christian, J.A.; Evans, T. February 2015. A \textsc{6-dof} pose initialization strategy for \textsc{lidar}-based non-cooperative navigation. In \textit{38th Annual Guidance \& Control Conference}, Breckenridge, CO.
 
 \medskip
-Sell, J.L.; Rhodes, A.; \textbf{Woods, J.O.}; Christian, J.A.; Evans, T. 2014. In \textit{AIAA/AAS Astrodynamics Specialist Conference}, San Diego, CA.
+Sell, J.L.; Rhodes, A.; \textbf{Woods, J.O.}; Christian, J.A.; Evans, T. 2014. Pose performance of LIDAR-based navigation for satellite servicing. In \textit{AIAA/AAS Astrodynamics Specialist Conference}, San Diego, CA.
 
 %\bigskip
 %\mhead{Posters}%
@@ -336,7 +371,10 @@ Sell, J.L.; Rhodes, A.; \textbf{Woods, J.O.}; Christian, J.A.; Evans, T. 2014. I
 \par\vspace{-\baselineskip}\textit{Some internal technical report titles have been changed for external clarity or to maintain client confidentiality.}
 
 \medskip
-\par\textbf{Woods, J.O.} 2020. Concepts in lunar positioning, navigation, and timing. \textit{OLF--GNC--2020--01}, Open Lunar Foundation, San Francisco, CA. \textit{Work in progress.}
+\par\textbf{Woods, J.O.} 2021. An engineer's history of US and multilateral export controls. \textit{OLF--ENG--2021--01}, Open Lunar Foundation, San Francisco, CA.
+
+%\medskip
+%\par\textbf{Woods, J.O.} 2020. Concepts in lunar positioning, navigation, and timing. \textit{OLF--GNC--2020--01}, Open Lunar Foundation, San Francisco, CA. \textit{Work in progress.}
 
 \medskip
 \par\textbf{Woods, J.O.} 2019. Navigation filter design towards a lunar lander. \textit{OLF--GNC--2019--02}, Open Lunar Foundation, San Francisco, CA. \textit{Work in progress, ceased and published early due to pandemic.} \href{https://github.com/openlunar/navmemos/raw/master/filter/filter.pdf}{github.com/openlunar/navmemos/ raw/master/filter/filter.pdf}
@@ -370,36 +408,39 @@ Sell, J.L.; Rhodes, A.; \textbf{Woods, J.O.}; Christian, J.A.; Evans, T. 2014. I
 
 \bigskip
 %\newpage
-\mhead{Honors \& \newline Awards}%
-Paul Harris Fellowship                                              \rdate{2018}\newline
-Necklace Factory / Burning Man Art Award                            \rdate{2016}\newline
+\mhead{Selected \\ Honors \& \newline Awards}%
+%Paul Harris Fellowship                                              \rdate{2018}\newline
+%Necklace Factory / Burning Man Art Award                            \rdate{2016}\newline
 White House Champion of Change				\rdate{2014}\newline
 National Science Foundation Graduate Research Fellowship			\rdate{2009--2012}\newline
-``Best of Austin'' Award: Best Activist	(\emph{The Austin Chronicle})							\rdate{2011}\newline
-Scholar, Netroots Nation											\rdate{2011}\newline
+%``Best of Austin'' Award: Best Activist	(\emph{The Austin Chronicle})							\rdate{2011}\newline
+%Scholar, Netroots Nation											\rdate{2011}\newline
 Initiate, Friar Society (University of Texas at Austin)				\rdate{2010}\newline
-Graduate School Recruitment Fellowship (University of Texas at Austin) \rdate{2007}\newline
+%Graduate School Recruitment Fellowship (University of Texas at Austin) \rdate{2007}\newline
 Black Belt, Tae Kwon Do (Chung Do Kwan)								\rdate{2006}\newline
-Member, Hillcrest Honors Community (Virginia Tech)				\rdate{2003--2007}\newline
-Inductee, $\Upsilon\Pi\mathrm{E}$ (Virginia Tech)					\rdate{2006}\newline
-Gilbert \& Lucille Seay Scholarship (Virginia Tech)					\rdate{2005}\newline
+%Member, Hillcrest Honors Community (Virginia Tech)				\rdate{2003--2007}\newline
+%Inductee, $\Upsilon\Pi\mathrm{E}$ (Virginia Tech)					\rdate{2006}\newline
+%Gilbert \& Lucille Seay Scholarship (Virginia Tech)					\rdate{2005}\newline
 National Merit Scholarship											\rdate{2002}%\newline
 
 \bigskip
 \mhead{Community Contributions}
 \vskip -1em
-\textbf{Black Rock Rangers}\newline
-\emph{Ranger} \rdate{2018--\textsc{present}}\newline
+\textbf{Lunar Surface Innovation Consortium}\rdate{2018--\textsc{present}}\newline
+\emph{Communications Subgroup Lead} \rdate{2021--2022}
+
+\medskip
+\textbf{Black Rock Rangers}\rdate{2018--\textsc{present}}\newline
 \emph{Green Dot} \rdate{2019--\textsc{present}}
 
 \medskip
 \textbf{Ruby Science Foundation (SciRuby)} \newline %The Ruby Science Foundation: The SciRuby Project}\newline
-\emph{Director \& Co-Founder} \rdate{2012--\textsc{present}}
+\emph{Director \& Co-Founder} \rdate{2012--2018}
 
-\medskip
-\textbf{Austin Swing Syndicate}\newline
-\emph{At-Large Board Member, Secretary} \rdate{2012--2014}%\newline%
-
+%\medskip
+%\textbf{Austin Swing Syndicate}\newline
+%\emph{At-Large Board Member, Secretary} \rdate{2012--2014}%\newline%
+%
 \medskip
 \textbf{Texas Gun Sense}\newline
 \emph{Co-founder, Advisory Board Member} \rdate{2013--\textsc{present}}%\newline
@@ -410,9 +451,12 @@ National Merit Scholarship											\rdate{2002}%\newline
 \bigskip
 \mhead{Activities \& \newline Interests}%
 dance (lindy hop and ballet),
+music,
+roller skating,
 circus arts,
 space exploration,
-large-scale interactive art
+large-scale interactive art,
+immersive theatre
 
 \bigskip
 %French, German, Mandarin (smattering)
@@ -420,8 +464,9 @@ large-scale interactive art
 \mhead{Foreign\newline Languages}%
 English (native tongue), 
 Spanish (conversational), 
-Russian (needs refreshing),
-Mandarin (learning)
+Russian (needs refreshing)
+%German,
+%Mandarin
 
 \bigskip
 \begin{wrapfigure}{R}{2in}
@@ -449,8 +494,8 @@ Mandarin (learning)
 			, xmajorticks=false
 			]
 \addplot+[point meta=explicit symbolic,fill=black,draw=white] coordinates {
-	(C++,17) [C\footnotesize{++}]
-	(C,11) [C]
+	(C++,18) [C\footnotesize{++}]
+	(C,12) [C]
 	(Ruby,10) [Ruby]
 	(Python,8) [Python]
 	(Matlab,3) [Matlab]
@@ -464,15 +509,15 @@ Mandarin (learning)
 %
 %\emph{Strong}\ 
 \textsc{c},
-\Cpp\ (including modern extensions),
+\Cpp,
 Ruby,
-Python (including \textsc{c} extensions),
+Python,
 \LaTeX,
-\textsc{gnu} Octave and \textsc{Matlab}
+\textsc{gnu} Octave / Matlab
 
 \medskip
 \emph{Familiar}\ 
-\textsc{vhdl}, Java, \textsc{sql}, shell scripting, Agile development methodology
+Java, \textsc{sql}, shell scripting, Agile, Julia, \textsc{vhdl} 
 
 \medskip
 \emph{Forgotten}\
@@ -480,29 +525,32 @@ Perl, Fortran~95, regular expressions
 
 \medskip
 \emph{Libraries}\ 
-Orekit (Python \textsc{api}),
-\textsc{Spice}, SpiceyPy,
-Point Cloud Library$^\dagger$,
-\textsc{flann}$^\dagger$ ($k$ nearest neighbors),
+Orekit,
+\textsc{cspice} (\textsc{jpl naif}),
 \Cpp\ \textsc{stl} and Boost,
-\textsc{assimp},
-ImageMagick/\Magickpp,
+%\textsc{assimp},
+%ImageMagick/\Magickpp,
 %\textsc{atlas},
 %\textsc{lapack},
 %\textsc{blas},
 %\textsc{gnu} Scientific Library,
 Open\textsc{gl},
-\textsc{glsl},
 %\textsc{glm},
-Eigen,
-\textsc{Trick} simulator,
-\textsc{Nm}atrix$^\ddagger$ (Ruby linear algebra library),
-Pyquat$^\ddagger$ (Python attitude library),
-\textsc{Glidar}$^\ddagger$ (\textsc{3d lidar} simulator),
-Starlib$^\ddagger$ (ongoing rewrite of open source star tracker)
+%Eigen,
+\textsc{Trick} simulator
+
+\medskip
+\emph{Contributions}\ 
+Spiceypy, %$^\dagger$,
+Point Cloud Library, %$^\dagger$,
+\textsc{flann}, %,$^\dagger$ ($k$ nearest neighbors),
+\textsc{Nm}atrix$^\dagger$ (Ruby linear algebra library),
+Pyquat$^\dagger$ (Python attitude library),
+\textsc{Glidar}$^\dagger$ (\textsc{3d lidar} simulator)
 \\*
-\smallskip
-$^\dagger$\,{\footnotesize indicates code contributed to library}\hskip 1em$^\ddagger$\,{\footnotesize indicates primary authorship}
+\medskip
+%$^\dagger$\,{\footnotesize indicates code contributed to library}\hskip 1em
+$^\dagger$\,{\footnotesize indicates primary authorship}
 
 \medskip
 \emph{Software}\
@@ -519,11 +567,19 @@ Clang,
 Valgrind,
 \textsc{cm}ake,
 Ubuntu,
-Mac \textsc{os\,x}
-%
+Mac~\textsc{os\,}X,
+\textsc{gnu} Radio
+
+\bigskip
+\mhead{Other Skills}%
+Metal fabrication and \textsc{mig} welding, fiberglass/resin casting, \textsc{Fema~ics}-100 certification
 
 \bigskip
 \mhead{References}%
+Chris~Hadfield\rdate{\href{mailto:chris@chrishadfield.ca}{chris@chrishadfield.ca}}\newline
+Chair, Open Lunar Foundation; Commander, \textsc{csa} and \textsc{nasa}
+
+\medskip
 John~Christian\rdate{\href{mailto:john.christian@mail.wvu.edu}{john.christian@mail.wvu.edu}}\newline
 Asst.\ Professor of Aerospace Engineering, Rensselaer Polytechnic Institute
 
@@ -536,12 +592,12 @@ Amanda~Acevedo\rdate{\href{mailto:amanda.acevedo@vedosystems.com}{amanda.acevedo
 President, Vedo Systems; formerly Project Manager, Intuitive Machines
 
 \medskip
-Chris~Hadfield\rdate{\href{mailto:chris@chrishadfield.ca}{chris@chrishadfield.ca}}\newline
-Chair, Open Lunar Foundation; Commander, \textsc{csa} and \textsc{nasa}
-
-\medskip
 Ben~Howard\rdate{\href{mailto:ben@openlunar.org}{ben@openlunar.org}}\newline
 Chief Engineer, Open Lunar Foundation; Chief Spacecraft Architect, Planet
+
+\medskip
+Eva Pettinato\rdate{\href{mailto:eva.pettinato@gmail.com}{eva.pettinato@gmail.com}}\newline
+Lead Guidance, Navigation, and Control Engineer, Masten Space Systems
 
 %\medskip
 %Edward~Marcotte\rdate{\href{mailto:marcotte@icmb.utexas.edu}{marcotte@icmb.utexas.edu}\hskip 0.5cm\href{tel:512-471-5435}{512-471-5435}}\newline
