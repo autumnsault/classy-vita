@@ -9,17 +9,12 @@
   juno woods,
   juno september woods,
   juno s woods,
-  john woods,
-  john o woods,
-  john oates woods,
   resume, 
   curriculum, 
   vita, 
   curriculum vita, 
   cv, 
-  john, 
-  woods, 
-  jow,
+  woods,
   linear covariance analysis,
   lincov,
   ekf,
@@ -46,7 +41,13 @@
   patched conic,
   cr3bp,
   trajectory design,
-  space policy
+  space policy,
+  automation,
+  control systems,
+  PID controllers,
+  finite state automata,
+  state machines,
+  programmable logic controllers
 }
 
 \setlength\parindent{0pt}
@@ -211,20 +212,129 @@
 }\par
 \hrulefill
 
-\centering\small navigation \& state estimation \hskip 3mm$\circ$\hskip 3mm mission design \& analysis \hskip 3mm$\circ$\hskip 3mm systems engineering \hskip 3mm$\circ$\hskip 3mm guidance%evolutionary systems biology
+\centering\small guidance, navigation, \& control \hskip 3mm$\circ$\hskip 3mm statistics \& applied mathematics \hskip 3mm$\circ$\hskip 3mm empathy\hskip 3mm$\circ$\hskip 3mm design %evolutionary systems biology
+%\centering\small evolutionary systems biology \hskip 3mm$\circ$\hskip 3mm statistics \& applied mathematics \hskip 3mm$\circ$\hskip 3mm empathy\hskip 3mm$\circ$\hskip 3mm design %evolutionary 
 \vskip-6pt
 \hrulefill
 \end{adjustwidth}  
 \reversemarginpar 
 \setlength\marginparwidth{0.85in}
 \smallskip
+\begin{wrapfigure}{R}{2in}
+\vspace{-25pt}%
+\centering%
+%\includegraphics[width=2in]{programming-graph.pdf}%
+\begin{tikzpicture}
+\begin{axis}[ybar
+			, symbolic x coords={C++, C, Ruby, Python, Matlab},
+			, ylabel={years}
+			, ylabel near ticks
+			, ymajorgrids=true
+			, axis on top
+			, grid style={draw=white, line width=1pt}
+			, major tick length=0pt
+			, ymin=0
+			, xtick=data
+			, fill=black
+			, fill opacity=1.0
+			, draw=white
+			, bar width=0.05\textwidth
+			, nodes near coords
+			, every node near coord/.append style={rotate=90, anchor=west, color=black}
+			, width=2in
+			, xmajorticks=false
+			]
+\addplot+[point meta=explicit symbolic,fill=black,draw=white] coordinates {
+	(C++,21) [C\footnotesize{++}]
+	(C,15) [C]
+	(Ruby,11) [Ruby]
+	(Python,11) [Python]
+	(Matlab,4) [Matlab]
+};
+\end{axis}
+\end{tikzpicture}
+\vspace{-15pt}%
+\end{wrapfigure}%
+
+\mhead{Coding \newline Proficiencies}%
+%
+%\emph{Strong}\ 
+\textsc{c},
+\Cpp,
+Ruby,
+Python,
+\LaTeX,
+\textsc{gnu} Octave / Matlab
+
+\medskip
+\emph{Familiar}\ 
+Java, \textsc{sql}, shell scripting, Agile, Go
+
+\medskip
+\emph{Forgotten}\
+Perl, Fortran~95, Clojure, regular expressions
+
+\medskip
+\emph{Libraries}\ 
+Orekit,
+\textsc{cspice} (\textsc{jpl naif}),
+\Cpp\ \textsc{stl} and Boost,
+%\textsc{assimp},
+%ImageMagick/\Magickpp,
+%\textsc{atlas},
+%\textsc{lapack},
+%\textsc{blas},
+%\textsc{gnu} Scientific Library,
+Open\textsc{gl},
+%\textsc{glm},
+Eigen,
+\textsc{Trick} simulator,
+Basilisk
+
+\medskip
+\emph{Contributions}\ 
+Spiceypy, %$^\dagger$,
+Point Cloud Library, %$^\dagger$,
+\textsc{flann}, %,$^\dagger$ ($k$ nearest neighbors),
+\textsc{Nm}atrix$^\dagger$ (Ruby linear algebra library),
+Pyquat$^\dagger$ (Python attitude library),
+\textsc{Glidar}$^\dagger$ (\textsc{3d lidar} simulator)
+\\*
+\medskip
+%$^\dagger$\,{\footnotesize indicates code contributed to library}\hskip 1em
+$^\dagger$\,{\footnotesize indicates primary authorship}
+
+\medskip
+\emph{Software}\
+Copernicus, 
+Satellite Toolkit (\textsc{stk}),
+Git,
+%Gnuplot,
+%Emacs,
+%Vim,
+%Bash,
+%Zsh,
+\textsc{gcc},
+Clang,
+\textsc{gdb},
+Valgrind,
+\textsc{cm}ake,
+Ubuntu,
+Mac~\textsc{os\,x},
+\textsc{gnu} Radio
+
+\bigskip
+\mhead{Other Skills}%
+Metal fabrication and \textsc{mig} welding, fiberglass/resin casting, \textsc{fema~ics}-100 certification, \textsc{osha} forklift certification
+\bigskip
+
 \mhead{Education}%
 \textbf{The University of Texas at Austin,} Austin, Texas \newline
 \emph{Doctor of Philosophy, Cell \& Molecular Biology (Bioinformatics)}\rdate{2007--2013}
 \begin{itemize*}
-  \item National Science Foundation Fellow (2009--2012)%, \href{http://cssb.utexas.edu/}{Center for Systems \& Synthetic Biology} % 3.7646 GPA
-%  \item Dissertation: \href{https://www.dropbox.com/s/87v8j47mxo0afgj/diss.pdf}{Predicting gene--phenotype associations in humans and other species from orthologous and paralogous phenotypes}
-%  \item Advisor: Dr.~Edward~M.~Marcotte
+  \item National Science Foundation Fellow (2009--2012), \href{http://cssb.utexas.edu/}{Center for Systems \& Synthetic Biology} % 3.7646 GPA
+  \item Dissertation: \href{https://www.dropbox.com/s/87v8j47mxo0afgj/diss.pdf}{Predicting gene--phenotype associations in humans and other species from orthologous and paralogous phenotypes}
+  \item Advisor: Dr.~Edward~M.~Marcotte
 \end{itemize*}
 
 \medskip
@@ -238,22 +348,48 @@
 \bigskip
 \mhead{Professional \newline Appointments}%
 \vskip -1em
-\textbf{Masten Space Systems,}, Mojave, California \newline
-\emph{\textsc{gn\&c} engineer, 6-\textsc{dof} (contractor)} \rdate{\textsc{jul}~2021--\textsc{present}}
+\textbf{Charm Industrial,} San Francisco, California \newline
+\emph{Senior control systems engineer} \rdate{\textsc{oct}~2022--\textsc{may}~2023}
+\begin{itemize*}
+    \item Designed, implemented, and hardware tested custom process automation framework (finite state automata and various \textsc{pid} controllers) for use with programmable logic controllers
+    \item Wrote plant models for chemical engineering processes in fast pyrolysis-based carbon sequestration
+\end{itemize*}
+%
+\medskip
+\textbf{Masten Space Systems,} Mojave, California \newline
+\emph{\textsc{gn\&c} engineer, 6-\textsc{dof} (contractor)} \rdate{\textsc{jul}~2021--\textsc{jun}~2022}
 \begin{itemize*}
    \item Derived, designed, and prototyped \textsc{ekf} for \textsc{xl}-1 lunar lander
+   \item Created simulation Monte Carlo configuration framework, wrote system and sensor models
    \item Designed flight manager for high-level planning of \textsc{gn\&c} activities
    \item Advised organization on diversity, equity, and inclusion as part of \textsc{de\&i} council
 \end{itemize*}
 %
 \medskip
-\textbf{Metalunar, \textsc{\textbf{llc}}}, Boulder, Colorado / \textbf{Translunar, \textsc{\textbf{llc}}}, Berkeley, California \newline
-\emph{Co-founder} \rdate{\textsc{apr}~2020--\textsc{present}}
+\textbf{Charismatic Metafauna by Majorelle Arts,} Oakland, California \newline
+\emph{Co-creator} \rdate{\textsc{may}~2021--\textsc{sep}~2022}
 \begin{itemize*}
-  \item Systems engineering: \textsc{gn\&c} systems, optical navigation, and interplanetary radios (LunaNet)
-  \item Business models (system requirements, budget, timeline, market analysis) 
-  \item Proposal writing
+   \item Conceived of project idea and worked on a team of $\sim$30 volunteers to produce an art project with a materials budget of $\sim$\$40\textsc{k}; wrote sound design engineering requirements and schedule; chaired fundraising team
+%   \item Assisted in coordinating activities of teams (fire, sound, lighting, interactivity, fabrication) to fulfill artistic vision
+%   \item Installed and ran project at Burning Man 2022
 \end{itemize*}
+%
+\medskip
+\textbf{Numina Studios / Nocturne-X,} Oakland, California \newline
+\emph{Electronics Assembly (contractor)} \rdate{\textsc{sep}--\textsc{oct}~2021}
+%\begin{itemize*}
+%   \item Soldering and electronics assembly for a large-budget interactive art experience at Gray Area in San Francisco for three months beginning October~2021
+%\end{itemize*}
+%
+%\medskip
+%\textbf{Metalunar, \textsc{\textbf{llc}}}, Boulder, Colorado / \textbf{Translunar, \textsc{\textbf{llc}}}, Berkeley, California \newline
+%\emph{Co-founder} \rdate{\textsc{apr}~2020--\textsc{present}}
+%\begin{itemize*}
+%  \item Systems engineering: \textsc{gn\&c} systems, optical navigation, and interplanetary radios (LunaNet)
+%  \item Business models (system requirements, budget, timeline, market analysis) 
+%  \item Proposal writing
+%\end{itemize*}
+%
 
 \medskip
 \textbf{Open Lunar Foundation,} San Francisco, California \newline
@@ -262,28 +398,30 @@
 %  \item Analyzed 
 %  \item Created business plans, engineering schedules, and financial models for various for-profit interventions
 %\end{itemize*}
-\emph{Senior Researcher} \rdate{\textsc{mar}~2021--\textsc{jul}~2021} \\
+\emph{Senior Researcher} \rdate{\textsc{mar}--\textsc{jul}~2021} \\
 \emph{Director of Engineering Research \& Strategy} \rdate{\textsc{jul}~2020--\textsc{mar}~2021} \\
 \emph{Guidance, Navigation, \& Control} \rdate{\textsc{oct}~2019--\textsc{apr}~2020}
 \begin{itemize*}
   \item Designs and analyses: \textsc{ekf}, \textsc{bls} for orbit determination, sensors, trajectory
 %  \item Proposed a pipeline for generating vision-based navigation databases; studied positioning, navigation, and timing architectures %Submitted export control advisory opinion request to DDTC.
   \item Space policy: multilateral arms control treaties, export control policy, open source, electronic frontiers
+  \item Systems engineering: \textsc{gn\&c} systems, optical navigation and visual odometry, and interplanetary radios (LunaNet)
 \end{itemize*}
 
 \medskip
 \textbf{Intuitive Machines,} Houston, Texas \newline
 \emph{Senior Development Engineer} \rdate{\textsc{jun}~2015--\textsc{sep}~2019} % June 22 - Sep 27
 \begin{itemize*}
-  \item Trajectory design \& optimization; lunar mission design \& analysis (\textsc{Nova-c})%; sensor model simulations%; measurement model derivations; reaction control system trade study
-  \item Responsible for extended Kalman filter, models (Moon Express \textsc{mx}-1)
-  \item \textsc{Iss} rendezvous/berthing plan, preliminary \textsc{gn\&c} design (Axiom) %; prototyped quaternion feedback (eigenaxis) control algorithm; implemented candidate optimal group jet selection algorithm; performed control authority analysis
+  \item Trajectory design \& optimization; lunar mission design \& analysis (\textsc{nova-c})%; sensor model simulations%; measurement model derivations; reaction control system trade study
+  \item Documented and validated extended Kalman filter (Moon Express \textsc{mx}-1)
+  \item \textsc{iss} rendezvous/berthing plan, preliminary \textsc{gn\&c} design (Axiom) %; prototyped quaternion feedback (eigenaxis) control algorithm; implemented candidate optimal group jet selection algorithm; performed control authority analysis
   \item State estimation (\textsc{bls}, \textsc{ekf}, complementary) for drilling systems
 %  \item Performed observability analysis of gimbaled single-axis rate-integrating gyroscope for gyrocompassing; built batch least squares calibration and estimation strategy in \textsc{Matlab}
 %  \item Mission hardware and software support, wrote measurement models and extended Kalman filter for
   \item \textsc{gps}-denied navigation and gravimetry (Doppler \textsc{lidar})
 %  \item Cislunar navigation architectures: dilution of precision
-%  \item Open source Python attitude and unit quaternion library (pyquat)
+  \item Open source Python attitude and unit quaternion library (pyquat)
+  \item Hardware-in-the-loop simulation and testing to understand key \textsc{gn\&c}-related risks
 %  \item Responsible for universal navigation filter in \textsc{im}'s universal flight software, to be flown on a deorbiter (Terrestrial Return Vehicle, or \textsc{trv}) and Moon Express' moon lander; documented and re-derived filter; wrote and validated sensor models in \textsc{nasa} \textsc{trick} physics simulator
 %  \item Wrote engineering requirements for payloads and maintained \textsc{gn\&c} requirements for rendezvous and docking of Axiom commercial space station modules with \textsc{iss}; implemented attitude control and targeting algorithms and performed solar power study; created mission design
 % 
@@ -300,17 +438,18 @@
   \item Open source Open\textsc{gl}-based \textsc{3d} sensor simulator, \textsc{Glidar}
   \item Remote sensing technologies for resource surveying and utilization
   \item Mentored and collaborated with grad students and an undergraduate
+  \item Wrote parallel, faster-than-real-time dynamics simulations in a Monte Carlo framework
 \end{itemize*}
 
 \medskip
 \textbf{Center for Systems \& Synthetic Biology,} The University of Texas at Austin\newline
 \emph{National Science Foundation Fellow; Graduate Research Assistant}  \rdate{2007--2014}
 \begin{itemize*}
-  \item Algorithms and data structures in Python, Perl, Ruby, and \textsc{c}/\Cpp; pipelines and automation for large datasets
-  \item Synthetic biology, \textsc{hiv} evolution, and evolutionary systems biology%, by quickly predicting gene--disease and gene--phenotype associations
-  %\item Researched, designed, and wrote statistical software for searching for genes under various types of selection (positive, purifying, relaxed)
-  %\item Invalidated a hypothesis about \textsc{hiv} reservoirs using viral evolution simulation
-  %\item Designed scheme for re-engineering cellular metabolism in \textit{E.~coli}, and partially implemented it (wet lab)
+  \item Algorithms and data structures in Python, Perl, Ruby, and \textsc{c}/\Cpp; pipelines and automation for large datasets; simulation
+  \item Synthetic biology, \textsc{hiv} evolution, and evolutionary systems biology 
+  \item Researched, designed, and wrote statistical software for searching for genes under various types of selection (positive, purifying, relaxed)
+  \item Invalidated a hypothesis about \textsc{hiv} reservoirs using viral evolution simulation
+  \item Designed scheme for re-engineering cellular metabolism in \textit{E.~coli}, and partially implemented it (wet lab)
 \end{itemize*}
 
 \medskip
@@ -318,7 +457,7 @@
 \emph{Graduate Teaching Assistant} \rdate{2008, 2013}
 \begin{itemize*}
 %  \item Served as \textsc{ta} for Biochemistry, Introduction to Bioinformatics (graduate level), and Chemistry for non-science majors
-  \item Rewrote curriculum in Python (previously in Perl)
+  \item Rewrote Intro to Bioinformatics curriculum in Python (previously in Perl)
 \end{itemize*}
 %\newpage
 \bigskip
@@ -336,20 +475,20 @@
 \medskip
 \par\textbf{Woods, J.O.}; Christian, J.A. 2016. \textsc{Glidar}: An OpenGL-based, real-time, and open source 3\textsc{d} sensor simulator for testing computer vision algorithms. \textit{Journal of Imaging 2}(1).
 
-%\medskip
-%\par\textbf{Woods, J.O.}; Tien, M.Z.; Marcotte, E.M. April 2015. Interrogating conserved elements of diseases using Boolean combinations of orthologous phenotypes. \textit{BioR$\chi$iv}.
-%
-%\medskip
-%\par\textbf{Woods, J.O.}; Singh-Blom, U.M.; Laurent, J.M.; McGary, K.L.; Marcotte, E.M. January 2013. Prediction of gene--phenotype associations in humans, mice, and plants using phenologs. \textit{BMC Bioinformatics 14}: p.\ 203.
-%
-%\medskip
-%\par Singh-Blom, U.M.; Natarajan, N.; Tewari, A.; \textbf{Woods, J.O.}; Dhillon, I.S.; Marcotte, E.M. January 2013. Prediction and validation of gene--disease associations using methods inspired by social network analyses. \textit{PLoS One 8}(5): e58977.
-%
-%\medskip
-%\par McGary, K.L.; Park, T.J.; \textbf{Woods, J.O.}; Cha, H.J.; Wallingford, J.B.; Marcotte, E.M. April 2010. Systematic discovery of nonobvious human disease models through orthologous phenotypes. \textit{Proceedings of the National Academy of Sciences of the United States of America 107}(14): pp.\ 6544--9.
-%
-%\medskip
-%\par Brennan, T.P.; \textbf{Woods, J.O.}; Sedaghat, A.R.; Siliciano, J.D.; Siliciano, R.F.; Wilke, C.O. September 2009. Analysis of human immunodeficiency virus type 1 viremia and provirus in resting $\textsc{cd4}^{+}$ \textsc{t} cells reveals a novel source of residual viremia in patients on antiretroviral therapy. \textit{Journal of Virology 83}(17): pp.\ 8470--81.
+\medskip
+\par\textbf{Woods, J.O.}; Tien, M.Z.; Marcotte, E.M. April 2015. Interrogating conserved elements of diseases using Boolean combinations of orthologous phenotypes. \textit{BioR$\chi$iv}.
+
+\medskip
+\par\textbf{Woods, J.O.}; Singh-Blom, U.M.; Laurent, J.M.; McGary, K.L.; Marcotte, E.M. January 2013. Prediction of gene--phenotype associations in humans, mice, and plants using phenologs. \textit{BMC Bioinformatics 14}: p.\ 203.
+
+\medskip
+\par Singh-Blom, U.M.; Natarajan, N.; Tewari, A.; \textbf{Woods, J.O.}; Dhillon, I.S.; Marcotte, E.M. January 2013. Prediction and validation of gene--disease associations using methods inspired by social network analyses. \textit{PLoS One 8}(5): e58977.
+
+\medskip
+\par McGary, K.L.; Park, T.J.; \textbf{Woods, J.O.}; Cha, H.J.; Wallingford, J.B.; Marcotte, E.M. April 2010. Systematic discovery of nonobvious human disease models through orthologous phenotypes. \textit{Proceedings of the National Academy of Sciences of the United States of America 107}(14): pp.\ 6544--9.
+
+\medskip
+\par Brennan, T.P.; \textbf{Woods, J.O.}; Sedaghat, A.R.; Siliciano, J.D.; Siliciano, R.F.; Wilke, C.O. September 2009. Analysis of human immunodeficiency virus type 1 viremia and provirus in resting $\textsc{cd4}^{+}$ \textsc{t} cells reveals a novel source of residual viremia in patients on antiretroviral therapy. \textit{Journal of Virology 83}(17): pp.\ 8470--81.
 
 %\newpage
 \bigskip
@@ -359,13 +498,13 @@
 \medskip
 Sell, J.L.; Rhodes, A.; \textbf{Woods, J.O.}; Christian, J.A.; Evans, T. 2014. Pose performance of LIDAR-based navigation for satellite servicing. In \textit{AIAA/AAS Astrodynamics Specialist Conference}, San Diego, CA.
 
-%\bigskip
-%\mhead{Posters}%
-%\par\vspace{-\baselineskip}\textbf{Woods, J.O.}; Singh-Blom, U.M.; Laurent, J.; McGary, K.L.; Marcotte, E.M. 20--25 February 2012. In \textit{Complex Traits: Genomics and Computational Approaches}, Keystone Symposia, Breckenridge, CO.
-%
-%\medskip
-%\par \textbf{Woods, J.O.}; Singh-Blom, U.M.; McGary, K.L.; Marcotte, E.M. 13--16 November 2010. In \textit{From Functional Genomics to Systems Biology},  EMBL Heidelberg, Heidelberg, Germany.
-%
+\bigskip
+\mhead{Posters}%
+\par\vspace{-\baselineskip}\textbf{Woods, J.O.}; Singh-Blom, U.M.; Laurent, J.; McGary, K.L.; Marcotte, E.M. 20--25 February 2012. In \textit{Complex Traits: Genomics and Computational Approaches}, Keystone Symposia, Breckenridge, CO.
+
+\medskip
+\par \textbf{Woods, J.O.}; Singh-Blom, U.M.; McGary, K.L.; Marcotte, E.M. 13--16 November 2010. In \textit{From Functional Genomics to Systems Biology},  EMBL Heidelberg, Heidelberg, Germany.
+
 \bigskip
 \mhead{Technical \newline Reports}%
 \par\vspace{-\baselineskip}\textit{Some internal technical report titles have been changed for external clarity or to maintain client confidentiality.}
@@ -373,8 +512,8 @@ Sell, J.L.; Rhodes, A.; \textbf{Woods, J.O.}; Christian, J.A.; Evans, T. 2014. P
 \medskip
 \par\textbf{Woods, J.O.} 2021. An engineer's history of US and multilateral export controls. \textit{OLF--ENG--2021--01}, Open Lunar Foundation, San Francisco, CA.
 
-%\medskip
-%\par\textbf{Woods, J.O.} 2020. Concepts in lunar positioning, navigation, and timing. \textit{OLF--GNC--2020--01}, Open Lunar Foundation, San Francisco, CA. \textit{Work in progress.}
+\medskip
+\par\textbf{Woods, J.O.} 2020. Concepts in lunar positioning, navigation, and timing. \textit{OLF--GNC--2020--01}, Open Lunar Foundation, San Francisco, CA. \textit{Work in progress.}
 
 \medskip
 \par\textbf{Woods, J.O.} 2019. Navigation filter design towards a lunar lander. \textit{OLF--GNC--2019--02}, Open Lunar Foundation, San Francisco, CA. \textit{Work in progress, ceased and published early due to pandemic.} \href{https://github.com/openlunar/navmemos/raw/master/filter/filter.pdf}{github.com/openlunar/navmemos/ raw/master/filter/filter.pdf}
@@ -402,13 +541,15 @@ Sell, J.L.; Rhodes, A.; \textbf{Woods, J.O.}; Christian, J.A.; Evans, T. 2014. P
 
 \medskip
 \par Sell, J.; Rhodes, A.; \textbf{Woods, J.}; Christian, J.A. 2014. Theoretical foundations of pose estimation and covariance computation for non-cooperative relative navigation. ASEL Technical Memorandum: \textit{ASEL--14--001}.
-%
-%\medskip
-%\par Natarajan, N.; Singh-Blom, U.M.; Tewari, A.; \textbf{Woods, J.O.}; Dhillon, I.S.; Marcotte, E.M. 2011. Predicting gene--disease associations using multiple species data. UTCS Technical Report: \textit{TR--11--37}.
+
+\medskip
+\par Natarajan, N.; Singh-Blom, U.M.; Tewari, A.; \textbf{Woods, J.O.}; Dhillon, I.S.; Marcotte, E.M. 2011. Predicting gene--disease associations using multiple species data. UTCS Technical Report: \textit{TR--11--37}.
 
 \bigskip
 %\newpage
 \mhead{Selected \\ Honors \& \newline Awards}%
+Burning Man Honorarium: \textit{Charismatic Metafauna}				\rdate{2022}\newline
+Masten Space Systems: Diversity, Equity, and Inclusion Council member \rdate{2022}\newline
 %Paul Harris Fellowship                                              \rdate{2018}\newline
 %Necklace Factory / Burning Man Art Award                            \rdate{2016}\newline
 White House Champion of Change				\rdate{2014}\newline
@@ -426,7 +567,7 @@ National Merit Scholarship											\rdate{2002}%\newline
 \bigskip
 \mhead{Community Contributions}
 \vskip -1em
-\textbf{Lunar Surface Innovation Consortium}\rdate{2018--\textsc{present}}\newline
+\textbf{Lunar Surface Innovation Consortium}\rdate{2021--\textsc{present}}\newline
 \emph{Communications Subgroup Lead} \rdate{2021--2022}
 
 \medskip
@@ -469,112 +610,6 @@ Russian (needs refreshing)
 %Mandarin
 
 \bigskip
-\begin{wrapfigure}{R}{2in}
-\vspace{-25pt}%
-\centering%
-%\includegraphics[width=2in]{programming-graph.pdf}%
-\begin{tikzpicture}
-\begin{axis}[ybar
-			, symbolic x coords={C++, C, Ruby, Python, Matlab},
-			, ylabel={years}
-			, ylabel near ticks
-			, ymajorgrids=true
-			, axis on top
-			, grid style={draw=white, line width=1pt}
-			, major tick length=0pt
-			, ymin=0
-			, xtick=data
-			, fill=black
-			, fill opacity=1.0
-			, draw=white
-			, bar width=0.05\textwidth
-			, nodes near coords
-			, every node near coord/.append style={rotate=90, anchor=west, color=black}
-			, width=2in
-			, xmajorticks=false
-			]
-\addplot+[point meta=explicit symbolic,fill=black,draw=white] coordinates {
-	(C++,18) [C\footnotesize{++}]
-	(C,12) [C]
-	(Ruby,10) [Ruby]
-	(Python,8) [Python]
-	(Matlab,3) [Matlab]
-};
-\end{axis}
-\end{tikzpicture}
-\vspace{-15pt}%
-\end{wrapfigure}%
-\newpage
-\mhead{Coding \newline Proficiencies}%
-%
-%\emph{Strong}\ 
-\textsc{c},
-\Cpp,
-Ruby,
-Python,
-\LaTeX,
-\textsc{gnu} Octave / Matlab
-
-\medskip
-\emph{Familiar}\ 
-Java, \textsc{sql}, shell scripting, Agile, Julia, \textsc{vhdl} 
-
-\medskip
-\emph{Forgotten}\
-Perl, Fortran~95, regular expressions
-
-\medskip
-\emph{Libraries}\ 
-Orekit,
-\textsc{cspice} (\textsc{jpl naif}),
-\Cpp\ \textsc{stl} and Boost,
-%\textsc{assimp},
-%ImageMagick/\Magickpp,
-%\textsc{atlas},
-%\textsc{lapack},
-%\textsc{blas},
-%\textsc{gnu} Scientific Library,
-Open\textsc{gl},
-%\textsc{glm},
-%Eigen,
-\textsc{Trick} simulator
-
-\medskip
-\emph{Contributions}\ 
-Spiceypy, %$^\dagger$,
-Point Cloud Library, %$^\dagger$,
-\textsc{flann}, %,$^\dagger$ ($k$ nearest neighbors),
-\textsc{Nm}atrix$^\dagger$ (Ruby linear algebra library),
-Pyquat$^\dagger$ (Python attitude library),
-\textsc{Glidar}$^\dagger$ (\textsc{3d lidar} simulator)
-\\*
-\medskip
-%$^\dagger$\,{\footnotesize indicates code contributed to library}\hskip 1em
-$^\dagger$\,{\footnotesize indicates primary authorship}
-
-\medskip
-\emph{Software}\
-Copernicus, 
-Git,
-%Gnuplot,
-%Emacs,
-%Vim,
-%Bash,
-%Zsh,
-\textsc{gcc},
-Clang,
-\textsc{gdb},
-Valgrind,
-\textsc{cm}ake,
-Ubuntu,
-Mac~\textsc{os\,}X,
-\textsc{gnu} Radio
-
-\bigskip
-\mhead{Other Skills}%
-Metal fabrication and \textsc{mig} welding, fiberglass/resin casting, \textsc{Fema~ics}-100 certification
-
-\bigskip
 \mhead{References}%
 Chris~Hadfield\rdate{\href{mailto:chris@chrishadfield.ca}{chris@chrishadfield.ca}}\newline
 Chair, Open Lunar Foundation; Commander, \textsc{csa} and \textsc{nasa}
@@ -583,10 +618,10 @@ Chair, Open Lunar Foundation; Commander, \textsc{csa} and \textsc{nasa}
 John~Christian\rdate{\href{mailto:john.christian@mail.wvu.edu}{john.christian@mail.wvu.edu}}\newline
 Asst.\ Professor of Aerospace Engineering, Rensselaer Polytechnic Institute
 
-\medskip
-Tim~Crain\rdate{\href{mailto:tim@intuitivemachines.com}{tim@intuitivemachines.com}}\newline
-Vice President of Research and Development, Intuitive Machines
-
+%\medskip
+%Tim~Crain\rdate{\href{mailto:tim@intuitivemachines.com}{tim@intuitivemachines.com}}\newline
+%Vice President of Research and Development, Intuitive Machines
+%
 \medskip
 Amanda~Acevedo\rdate{\href{mailto:amanda.acevedo@vedosystems.com}{amanda.acevedo@vedosystems.com}}\newline
 President, Vedo Systems; formerly Project Manager, Intuitive Machines
